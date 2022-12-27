@@ -1,9 +1,19 @@
 <script>
     import "../app.css";
 
-    import Nav from "../components/nav.svelte";
+    import PageTransition from '../lib/components/PageTransition.svelte';
+
+    /** @type {import('@sveltejs/kit').Load} */
+    export const load = async ({ url }) => ({
+        props: {
+        url: url.href
+        }
+    });
 </script>
 
-<Nav />
+
+    <PageTransition {url}>
+        <slot />
+    </PageTransition>
 
 <slot />
