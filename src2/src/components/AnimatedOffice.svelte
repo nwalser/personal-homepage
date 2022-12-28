@@ -2,16 +2,16 @@
     import InlineSVG from 'svelte-inline-svg'
 </script>
 
-<InlineSVG src="./programmer-office.svg" class="absolute w-3/5 translate-x-3/4 -translate-y-20 z-0 office-animated" />
+<InlineSVG src="./programmer-office.svg" class="absolute z-0 -translate-y-40 office-animated" style="height: 120%; width: 140%;"/>
+
 
 <style>
     :global(#BookHTML, #BookPHP, #Cat, #Programmer){
         transition-duration: 0.5s;
     }
 
-    :global(#BookHTML:hover, #BookPHP:hover){
+    :global(#BookHTML:hover, #BookCSharp:hover){
         filter: drop-shadow(0px 0px 30px white);
-        transform: translateY(-30px);
     }
 
     :global(#Cat:hover, #Programmer:hover){
@@ -78,12 +78,48 @@
         }
     }
 
-    :global(#Stars g) {
-        animation: stars 6s;
+    :global(#S1, #S6, #S11, #S16, #S21, #S26) {
+        animation: stars 3s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
         filter: drop-shadow(0px 0px 20px white);
+    }
+
+    :global(#S2, #S7, #S12, #S17, #S22) {
+        animation: stars 4s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        filter: drop-shadow(0px 0px 15px white);
+        animation-delay: 0.5s;
+    }
+
+    :global(#S3, #S8, #S13, #S18, #S23) {
+        animation: stars 2s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        filter: drop-shadow(0px 0px 20px white);
+        animation-delay: 1s;
+    }
+
+    :global(#S4, #S9, #S14, #S19, #S24) {
+        animation: stars 5s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        filter: drop-shadow(0px 0px 50px white);
+        animation-delay: 0s;
+    }
+
+    :global(#S5, #S10, #S15, #S20, #S25) {
+        animation: stars 6s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        filter: drop-shadow(0px 0px 40px white);
+        animation-delay: 1s;
     }
 
     @keyframes -global-stars {
@@ -92,20 +128,45 @@
         }
 
         40% {
-            opacity: 0.5;
+            opacity: 0.1;
         }
+
+        60% {
+            opacity: 1;
+        }
+
+        85% {
+            opacity: 0.8;
+        }
+
 
         100%{
             opacity: 1;
         }
     }
 
-    :global(#Numbers g path) {
+    :global(#Numbers1 g g path) {
         animation: num 10s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
-        animation-delay: calc(var(--order) * 200ms);
+        animation-delay: 0s;
+    }
+
+    :global(#Numbers2 g g path) {
+        animation: num 10s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+    }
+
+    :global(#Numbers3 g g path) {
+        animation: num 10s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
     }
 
     @keyframes -global-num {
@@ -114,20 +175,15 @@
         }
 
         15% {
-            transform: translate(0px, 30px);
-        }
-
-        20%{
-            transform: translate(0px, 32px);
-
-        }
-
-        30% {
-            transform: translate(0px, 30px);
+            transform: translate(0px, 0.5px);
         }
 
         40% {
-            transform: translate(0px, 35px);
+            transform: translate(0px, 1.2px);
+        }
+
+        60% {
+            transform: translate(0px, 1px);
         }
 
         100% {
@@ -149,7 +205,7 @@
         }
 
         60%{
-            transform: translate(10px, -2px);
+            transform: translate(-20px, 4px);
         }
 
         100%{
