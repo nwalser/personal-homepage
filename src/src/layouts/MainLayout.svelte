@@ -27,19 +27,18 @@
 							</div>
 							<div class="hidden md:block">
 								<div class="ml-10 flex items-baseline space-x-4">
-									<MenuItem href="/about-me">About Me</MenuItem>
-									<MenuItem href="/projects">Projects</MenuItem>
+									<!-- <MenuItem href="/projects">Projects</MenuItem>
 									<MenuItem href="/programming-humor">Programming Humor</MenuItem>
-									<MenuItem href="/awesome-code-snippets">Awesome Code Snippets</MenuItem>
+									<MenuItem href="/awesome-code-snippets">Awesome Code Snippets</MenuItem> -->
 								</div>
 							</div>
 						</div>
 						<div class="hidden md:block">
 							<div class="ml-4 flex items-center md:ml-6">
 								<a
-									href="/contact-me"
+									href="/get-in-touch"
 									class="ml-6 inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-									>Contact Me</a
+									>Get in Touch</a
 								>
 							</div>
 						</div>
@@ -89,10 +88,9 @@
 			{#if menuOpen}
 				<div class="border-b border-gray-700 md:hidden" id="mobile-menu">
 					<div class="space-y-1 px-2 py-3 sm:px-3">
-						<MenuItem href="/about-me" mobile={true}>About Me</MenuItem>
-						<MenuItem href="/projects" mobile={true}>Projects</MenuItem>
+						<!-- <MenuItem href="/projects" mobile={true}>Projects</MenuItem>
 						<MenuItem href="/programming-humor" mobile={true}>Programming Humor</MenuItem>
-						<MenuItem href="/awesome-code-snippets" mobile={true}>Awesome Code Snippets</MenuItem>
+						<MenuItem href="/awesome-code-snippets" mobile={true}>Awesome Code Snippets</MenuItem> -->
 					</div>
 				</div>
 			{/if}
@@ -107,7 +105,9 @@
 	</div>
 
 	<main class="-mt-36">
-		<div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+		<div
+			class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 text-xl tracking-tight font-light text-slate-800 text-justify"
+		>
 			<slot name="body" />
 		</div>
 	</main>
