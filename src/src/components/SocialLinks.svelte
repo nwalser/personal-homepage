@@ -1,6 +1,6 @@
 <script>
-	import GridList from "./grid-list/GridList.svelte";
-	import GridListItem from "./grid-list/GridListItem.svelte";
+	import GridList from "src/components/grid-list/GridList.svelte";
+	import GridListItem from "src/components/grid-list/GridListItem.svelte";
 
 </script>
 

@@ -7,8 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>Hi. I am Nathaniel Walser.</title>
-	<html lang="en" />
+	<title>Nathaniel Walser - Hi</title>
 </svelte:head>
 
 <TwoColumnLayout>

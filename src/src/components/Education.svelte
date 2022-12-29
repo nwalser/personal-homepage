@@ -1,7 +1,7 @@
 <script>
 	import Timeline from 'src/components/timeline/Timeline.svelte';
 	import TimelineHeading from 'src/components/timeline/TimelineHeading.svelte';
-	import TimelineSubheading from './timeline/TimelineSubheading.svelte';
+	import TimelineSubheading from 'src/components/timeline/TimelineSubheading.svelte';
 </script>
 
 <h1 class="mb-6 font-semibold text-2xl">Education</h1>

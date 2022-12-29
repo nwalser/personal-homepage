@@ -5,8 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Get in Touch</title>
-	<html lang="en" />
+	<title>Nathaniel Walser - Get in Touch</title>
 </svelte:head>
 
 <TwoColumnLayout>

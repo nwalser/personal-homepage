@@ -1,5 +1,5 @@
 <script>
-	import MainLayout from "./MainLayout.svelte";
+	import MainLayout from "src/layouts/MainLayout.svelte";
 
 	export let title;
 	export let date;
