@@ -27,6 +27,8 @@
 							</div>
 							<div class="hidden md:block">
 								<div class="ml-10 flex items-baseline space-x-4">
+									<MenuItem href="/programming-humour">Programming Humour</MenuItem>
+
 									<!-- <MenuItem href="/projects">Projects</MenuItem>
 									<MenuItem href="/programming-humor">Programming Humor</MenuItem>
 									<MenuItem href="/awesome-code-snippets">Awesome Code Snippets</MenuItem> -->
@@ -88,6 +90,8 @@
 			{#if menuOpen}
 				<div class="border-b border-gray-700 md:hidden" id="mobile-menu">
 					<div class="space-y-1 px-2 py-3 sm:px-3">
+						<MenuItem href="/programming-humour" mobile={true}>Programming Humour</MenuItem>
+
 						<!-- <MenuItem href="/projects" mobile={true}>Projects</MenuItem>
 						<MenuItem href="/programming-humor" mobile={true}>Programming Humor</MenuItem>
 						<MenuItem href="/awesome-code-snippets" mobile={true}>Awesome Code Snippets</MenuItem> -->

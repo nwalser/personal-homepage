@@ -15,29 +15,29 @@
 		<div class="relative flex items-start space-x-3">
 			<div class="relative px-3">
 				<div
-					class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-100 ring-8 ring-white"
+					class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-white my-2"
 				/>
 			</div>
 			<div class="min-w-0 flex-1">
 				<div>
-					<div class="text-sm">
+					<div class="text-base font-medium text-gray-900">
 						{#if href!=""}
 							{#if newTarget}
-								<a href={href} target="_blank" rel="noopener noreferrer" class="font-medium text-gray-900">{title}</a>
+								<a href={href} target="_blank" rel="noopener noreferrer">{title}</a>
 							{:else}
-								<a href={href} class="font-medium text-gray-900">{title}</a>
+								<a href={href}>{title}</a>
 							{/if}
 						{:else}
-							<p class="font-medium text-gray-900">{title}</p>
+							<p>{title}</p>
 						{/if}					</div>
-					<p class="mt-0.5 text-sm text-gray-500">{subtitle}</p>
+					<p class="text-base text-gray-500">{subtitle}</p>
 					{#if $$slots.body}
-						<p class="mt-0.5 text-xs text-gray-500">
+						<p class="mt-2 text-base text-gray-500">
 							<slot name="body" />
 						</p>
 					{/if}
 
-					{#if $$slots.body}
+					{#if $$slots.tags}
 						<span class="mr-0.5">
 							<slot name="tags" />
 						</span>

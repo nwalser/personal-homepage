@@ -13,7 +13,7 @@ const config = {
 		mdsvex({
 		  extensions: ['.md'],
 		  layout: {
-			page: 'src/layouts/PageLayout.svelte'
+			page: 'src/layouts/PageLayout.svelte',
 		  },
 		})
 	  ],
