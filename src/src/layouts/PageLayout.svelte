@@ -5,6 +5,10 @@
 	export let date;
 </script>
 
+<svelte:head>
+	<title>{title}</title>
+</svelte:head>
+
 <MainLayout>
 	<span slot="title">{title}</span>
 	<span slot="body">
