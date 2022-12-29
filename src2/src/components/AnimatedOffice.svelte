@@ -2,7 +2,7 @@
     import InlineSVG from 'svelte-inline-svg'
 </script>
 
-<InlineSVG src="./programmer-office.svg" class="absolute z-0 -translate-y-40 office-animated" style="height: 120%; width: 140%;"/>
+<InlineSVG src="./programmer-office.svg" class="absolute z-0 office-animated" preserveAspectRatio="xMaxYMax slice"/>
 
 
 <style>

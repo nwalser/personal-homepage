@@ -15,6 +15,7 @@
 		"@sveltejs/adapter-auto": "^1.0.0",
 		"@sveltejs/kit": "^1.0.0",
 		"@sveltejs/svelte-virtual-list": "^3.0.1",
+		"@tailwindcss/typography": "^0.5.8",
 		"@types/ascii-art": "^1.4.0",
 		"@types/figlet": "^1.5.5",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",

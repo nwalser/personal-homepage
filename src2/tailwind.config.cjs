@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'press-start': ['\'Press Start 2P\'', 'cursive'],
+      'inter': ['\'Inter\'', 'sans-serif'],
     },
     animation: {
       text: 'text 5s ease infinite',
@@ -25,5 +25,6 @@ module.exports = {
   },
   plugins: [
     require('tailwind-scrollbar'),
+    require('@tailwindcss/typography'),
   ],
 }

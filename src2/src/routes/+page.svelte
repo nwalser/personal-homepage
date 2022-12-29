@@ -1,51 +1,26 @@
 <script>
-    import { onMount } from 'svelte';
-
-    import AnimatedOffice from '../components/AnimatedOffice.svelte';
-
-    import Typed from 'typed.js';
-
-
-	onMount(async () => {
-        var options = {
-            typeSpeed: 20,
-            stringsElement: '#typed-strings',
-            loop: false,
-            showCursor: false,
-        };
-
-        var typed = new Typed('#typed', options);
-	});
+	import MainLayout from '../components/MainLayout.svelte';
 </script>
 
-<div class="relative h-screen overflow-hidden">
-    <div id="typed-strings" class="absolute w-1/3 text-white font-press-start translate-x-16 translate-y-16 z-10">
-        <div>
-            <h1 class="text-8xl">
-                Hi. I am 
-                <span class="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">Nathaniel Walser.</span>
-            </h1>
-            <p class="text-4xl mt-10">
-                A 21 year old full stack software developer that is spezialized in frameworks like
-                <span class="bg-gradient-to-r from-violet-300 to-pink-400 text-transparent bg-clip-text">ASP.Net Core</span>
-                and
-                <span class="bg-gradient-to-r from-violet-300 to-pink-400 text-transparent bg-clip-text">Blazor.</span>
-            </p>
-            <p class="text-4xl mt-10">
-                Feel free to have a look around my office.
-            </p>
-            <p class="text-4xl mt-10"> 
-                <span class="bg-gradient-to-r from-violet-700 to-pink-100 text-transparent bg-clip-text">--></span>
-            </p>
-        </div>
-    </div>
-
-    <div class="absolute w-1/3 text-white font-press-start translate-x-16 translate-y-16 z-10">
-        <div id="typed">
-            
-        </div>
-    </div>
-
-    <AnimatedOffice />
-
-</div>
+<MainLayout>
+	<span slot="title"> Hi. I am Nathaniel Walser. </span>
+	<span slot="body">
+		<div class="rounded-lg bg-white px-5 py-6 shadow sm:px-6">
+			<h1 class="text-3xl font-bold tracking-tight text-slate-800">Hi. I am Nathaniel Walser.</h1>
+			<p class="text-xl tracking-tight font-light text-slate-800">
+				A 21 year old junior fullstack software developer based in Saint Gallen, Switzerland.
+			</p>
+			<article class="prose lg:prose-lg w-full">
+				<h1 class="prose-h1:prose-emerald">Hi! I am Nathaniel Walser.</h1>
+				<p class="prose-h2:marker:first-letter:selection:first-line">
+					A 21 year old junior fullstack software developer based in Saint Gallen, Switzerland.
+				</p>
+				<p>
+					But a recent study shows that the celebrated appetizer may be linked to a series of rabies
+					cases springing up around the country.
+				</p>
+				<!-- ... -->
+			</article>
+		</div>
+	</span>
+</MainLayout>
