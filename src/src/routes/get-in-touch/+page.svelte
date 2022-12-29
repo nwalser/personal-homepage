@@ -4,6 +4,11 @@
 	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
 </script>
 
+<svelte:head>
+	<title>Get in Touch</title>
+	<html lang="en" />
+</svelte:head>
+
 <TwoColumnLayout>
 	<span slot="title">Get in Touch</span>
 	<span slot="body">

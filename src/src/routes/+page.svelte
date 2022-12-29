@@ -6,8 +6,13 @@
 	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
 </script>
 
+<svelte:head>
+	<title>Hi. I am Nathaniel Walser.</title>
+	<html lang="en" />
+</svelte:head>
+
 <TwoColumnLayout>
-	<span slot="title"> Hi. I am Nathaniel Walser.</span>
+	<span slot="title">Hi. I am Nathaniel Walser.</span>
 	<span slot="body">
 		<Container>
 			<ShortIntroduction />
