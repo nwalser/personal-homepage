@@ -1,8 +1,7 @@
 <script>
     import { page } from '$app/stores';
 	import { error } from '@sveltejs/kit';
-	import MainLayout from '../components/MainLayout.svelte';
-	import MenuItem from '../components/MenuItem.svelte';
+	import MainLayout from 'src/components/MainLayout.svelte';
 </script>
 
 

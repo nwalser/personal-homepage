@@ -1,6 +1,6 @@
 <script>
-	import MenuItem from '../components/MenuItem.svelte';
-	import '../app.css';
+	import MenuItem from 'src/components/MenuItem.svelte';
+	import 'src/app.css';
 
 	let menuOpen = false;
 
