@@ -3,7 +3,7 @@
     Switzerland. My fascination with technology and robotics has led me to pursue learning
     programming, and I am always looking for ways to improve my skills and stay up-to-date with
     the latest technologies. I have worked on a number of projects, including creating software
-    algorightms with neuronal networks for surface inspection and quality assurance.
+    algorigthms with neuronal networks for surface inspection and quality assurance.
 </p>
 <br />
 <p>
