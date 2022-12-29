@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap');
 
+@import "prism-theme-vars/base.css";
+
+:root{
+    --prism-foreground: #d4d4d4;
+    --prism-background: #1e1e1e;
+
+    --prism-namespace: #aaaaaa;
+    --prism-comment: #758575;
+    --prism-namespace: #444444;
+    --prism-string: #ce9178;
+    --prism-punctuation: #d4d4d4;
+    --prism-literal: #36acaa;
+    --prism-keyword: #38a776;
+    --prism-function: #dcdcaa;
+    --prism-deleted: #9a050f;
+    --prism-class: #4ec9b0;
+    --prism-builtin: #d16969;
+    --prism-property: #ce9178;
+    --prism-regex: #ad502b;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

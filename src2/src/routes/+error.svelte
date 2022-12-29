@@ -1,7 +1,7 @@
 <script>
     import { page } from '$app/stores';
 	import { error } from '@sveltejs/kit';
-	import MainLayout from 'src/components/MainLayout.svelte';
+	import MainLayout from 'src/layouts/MainLayout.svelte';
 </script>
 
 

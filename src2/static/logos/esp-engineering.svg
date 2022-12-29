@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.972583,0,0,0.972583,250,250)">
+        <g id="espLogoRectangle.svg" transform="matrix(1,0,0,1,-1000,-250)">
+            <g id="esp">
+            </g>
+            <g transform="matrix(11.7592,0,0,11.7592,-694.853,20.0488)">
+                <g id="signet">
+                    <g>
+                        <path d="M136.79,31.32L139,31.3L139,29.13L136.79,29.13L136.79,31.32Z" style="fill:rgb(35,44,99);"/>
+                        <path d="M134.57,29.13L132.36,29.13L132.36,31.35L134.57,31.33L134.57,29.13Z" style="fill:rgb(35,44,99);"/>
+                        <rect x="139" y="26.92" width="2.21" height="2.21" style="fill:rgb(35,44,99);"/>
+                        <path d="M151.2,12.46L151.2,17.16L150.68,17.16L150.68,12.97L146.49,12.97L146.49,12.46L151.2,12.46C149.2,10.45 146.44,9.21 143.38,9.21C137.29,9.21 132.35,14.15 132.35,20.24L132.35,22.49L134.56,22.49L134.56,20.28L136.77,20.28L136.77,22.49L139,22.49L139,24.7L141.21,24.7L141.21,22.49L143.42,22.49L143.42,24.7L141.21,24.7L141.21,26.91L143.42,26.91L143.42,29.12L141.21,29.12L141.21,31.27L143.38,31.26C149.47,31.26 154.41,26.32 154.41,20.23C154.42,17.21 153.19,14.46 151.2,12.46Z" style="fill:rgb(35,44,99);"/>
+                        <rect x="134.57" y="24.7" width="2.21" height="2.21" style="fill:rgb(35,44,99);"/>
+                        <path d="M151.72,11.95L151.72,7.76L151.2,7.76L151.2,12.46L155.91,12.46L155.91,11.95L151.72,11.95Z" style="fill:rgb(35,44,99);"/>
+                    </g>
+                </g>
+            </g>
+            <g id="claim">
+            </g>
+        </g>
+        <g id="espLogoRectangle.svg1" serif:id="espLogoRectangle.svg">
+        </g>
+    </g>
+</svg>

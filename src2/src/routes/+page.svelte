@@ -1,25 +1,26 @@
 <script>
-	import MainLayout from 'src/components/MainLayout.svelte';
+	import Container from 'src/components/Container.svelte';
+	import Education from 'src/components/Education.svelte';
+	import ShortIntroduction from 'src/components/ShortIntroduction.svelte';
+	import WorkExperience from 'src/components/WorkExperience.svelte';
+	import MainLayout from 'src/layouts/MainLayout.svelte';
+	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
 </script>
 
-<MainLayout>
-	<span slot="title"> Hi. I am Nathaniel Walser. </span>
-	<span slot="body">
-		<div class="rounded-lg bg-white px-5 py-6 shadow sm:px-6">
-			<h1 class="text-3xl font-bold tracking-tight text-slate-800">Hi. I am Nathaniel Walser.</h1>
-			<p class="text-xl tracking-tight font-light text-slate-800">
-				A 21 year old junior fullstack software developer based in Saint Gallen, Switzerland.
-			</p>
-			<article class="prose lg:prose-lg w-full">
-				<h1 class="prose-h1:prose-emerald">Hi! I am Nathaniel Walser.</h1>
-				<p class="prose-h2:marker:first-letter:selection:first-line">
-					A 21 year old junior fullstack software developer based in Saint Gallen, Switzerland.
-				</p>
-				<p>
-					But a recent study shows that the celebrated appetizer may be linked to a series of rabies
-					cases springing up around the country.
-				</p>
-			</article>
-		</div>
+<TwoColumnLayout>
+	<span slot="title"> Hi. I am Nathaniel Walser.</span>
+	<span slot="body" class="text-justify">
+		<Container>
+			<ShortIntroduction />
+		</Container>
 	</span>
-</MainLayout>
+	<span slot="side">
+		<Container>
+			<WorkExperience />
+		</Container>
+
+		<Container>
+			<Education />
+		</Container>
+	</span>
+</TwoColumnLayout>

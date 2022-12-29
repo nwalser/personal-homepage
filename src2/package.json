@@ -24,6 +24,7 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"mdsvex": "^0.10.6",
 		"postcss": "^8.4.20",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
@@ -39,6 +40,8 @@
 	"dependencies": {
 		"canvas": "^2.11.0",
 		"figlet": "^1.5.2",
+		"prism-theme-vars": "^0.2.4",
+		"prism-themes": "^1.9.0",
 		"svelte-inline-svg": "^1.2.0",
 		"typed.js": "^2.0.12"
 	}
