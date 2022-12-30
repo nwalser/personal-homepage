@@ -4,6 +4,7 @@
 	import TimelineHeading from 'src/components/timeline/TimelineHeading.svelte';
 	import Timeline from 'src/components/timeline/Timeline.svelte';
 	import TimelineSubheading from 'src/components/timeline/TimelineSubheading.svelte';
+	import Title from 'src/components/headers/Title.svelte';
 </script>
 
 <svelte:head>
@@ -11,15 +12,15 @@
 </svelte:head>
 
 <TwoColumnLayout>
-	<span slot="title">Hi. I am Nathaniel Walser.</span>
+	<span slot="header"><Title>Hi. I am Nathaniel Walser.</Title></span>
 	<span slot="body">
 		<Panel>
 			<p>
 				I am a 21 year old <span class="font-bold">fullstack developer</span> based in Saint Gallen,
 				Switzerland. My fascination with technology and robotics has led me to pursue learning programming,
 				and I am always looking for ways to improve my skills and stay up-to-date with the latest technologies.
-				I have worked on a number of projects, including creating software algorithms with neuronal
-				networks for surface inspection and quality assurance.
+				I have worked on a number of projects, including creating software algorithms with neuronal networks
+				for surface inspection and quality assurance.
 			</p>
 			<br />
 			<p>
@@ -35,7 +36,8 @@
 			</p>
 			<br />
 			<p>
-				In my free time I fly quadrocopters, learn new technologies and develop plugins for a fully autonomous autopilot.
+				In my free time I fly quadrocopters, learn new technologies and develop plugins for a fully
+				autonomous autopilot.
 			</p>
 		</Panel>
 

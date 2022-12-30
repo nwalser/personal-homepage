@@ -3,7 +3,7 @@
 </script>
 
 <MainLayout>
-	<span slot="title"><slot name="title" /></span>
+	<span slot="header"><slot name="header" /></span>
 	<span slot="body">
 		<div class="grid grid-cols-7 gap-4">
 			<div class="col-span-7 md:col-span-4">

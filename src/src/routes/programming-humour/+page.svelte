@@ -2,6 +2,7 @@
 	import { Container } from 'postcss';
 	import Panel from 'src/components/Panel.svelte';
 	import MainLayout from 'src/layouts/MainLayout.svelte';
+	import Title from 'src/components/headers/Title.svelte';
 </script>
 
 <svelte:head>
@@ -9,7 +10,7 @@
 </svelte:head>
 
 <MainLayout>
-	<span slot="title">A collection of my favorite programming jokes</span>
+	<span slot="header"><Title>A collection of my favorite programming jokes</Title></span>
 	<span slot="body">
 		<div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-4">
 			<div>

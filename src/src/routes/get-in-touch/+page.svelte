@@ -3,6 +3,7 @@
 	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
 	import GridList from 'src/components/grid-list/GridList.svelte';
 	import GridListItem from 'src/components/grid-list/GridListItem.svelte';
+	import Title from 'src/components/headers/Title.svelte';
 </script>
 
 <svelte:head>
@@ -10,7 +11,7 @@
 </svelte:head>
 
 <TwoColumnLayout>
-	<span slot="title">Get in Touch</span>
+	<span slot="header"><Title>Get in Touch</Title></span>
 	<span slot="body">
 		<Panel>
 			<p>You can get in touch with me via one of the social networks provided on the right side.</p>
