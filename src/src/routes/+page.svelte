@@ -18,14 +18,14 @@
 				I am a 21 year old <span class="font-bold">fullstack developer</span> based in Saint Gallen,
 				Switzerland. My fascination with technology and robotics has led me to pursue learning programming,
 				and I am always looking for ways to improve my skills and stay up-to-date with the latest technologies.
-				I have worked on a number of projects, including creating software algorigthms with neuronal
+				I have worked on a number of projects, including creating software algorithms with neuronal
 				networks for surface inspection and quality assurance.
 			</p>
 			<br />
 			<p>
 				Currently I am working part time for <span class="font-bold">esp-engineering gmbh</span>,
-				where I am able to extend my knowledge in vision based algorigthms, operator interfaces,
-				managing large datasets and many more areas.
+				where I am able to extend my knowledge in vision based algorithms, operator interfaces,
+				managing large datasets and many areas more.
 			</p>
 			<br />
 			<p>
@@ -35,7 +35,7 @@
 			</p>
 			<br />
 			<p>
-				In my free time I fly quadrocopters and develop plugins for a fully autonomous autopilot.
+				In my free time I fly quadrocopters, learn new technologies and develop plugins for a fully autonomous autopilot.
 			</p>
 		</Panel>
 
