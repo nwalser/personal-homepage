@@ -12,7 +12,7 @@
 </svelte:head>
 
 <TwoColumnLayout>
-	<span slot="header"><Title>Hi. I am Nathaniel Walser.</Title></span>
+	<span slot="header"><Title title="Hi. I am Nathaniel Walser." /></span>
 	<span slot="body">
 		<Panel>
 			<p>

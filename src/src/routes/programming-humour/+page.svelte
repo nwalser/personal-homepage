@@ -10,7 +10,7 @@
 </svelte:head>
 
 <MainLayout>
-	<span slot="header"><Title>A collection of my favorite programming jokes</Title></span>
+	<span slot="header"><Title title="A collection of my favorite programming jokes" subtitle="Updated: 30.12.2022" /></span>
 	<span slot="body">
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 			<div>

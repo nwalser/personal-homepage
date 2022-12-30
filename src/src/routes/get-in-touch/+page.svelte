@@ -11,7 +11,7 @@
 </svelte:head>
 
 <TwoColumnLayout>
-	<span slot="header"><Title>Get in Touch</Title></span>
+	<span slot="header"><Title title="Get in Touch" /></span>
 	<span slot="body">
 		<Panel>
 			<p>You can get in touch with me via one of the social networks provided on the right side.</p>
