@@ -12,12 +12,12 @@
 <MainLayout>
 	<span slot="header"><Title>A collection of my favorite programming jokes</Title></span>
 	<span slot="body">
-		<div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-4">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 			<div>
 				<Panel class="h-full">
 					<p>How many programmers does it take to change a light bulb?</p>
 					<br />
-					<p>None – It’s a hardware problem</p>
+					<p>None – It’s a hardware problem.</p>
 				</Panel>
 			</div>
 			<div>
@@ -35,7 +35,7 @@
 					<p>Because they don’t see sharp.</p>
 				</Panel>
 			</div>
-			<div class="col-span-3">
+			<div class="col-span-1 md:col-span-3">
 				<Panel class="h-full">
 					<h2 class="font-bold">CIA - Computer Industry Acronyms</h2>
 					<p>// CD-ROM: Consumer Device, Rendered Obsolete in Months</p>
