@@ -1,8 +1,9 @@
 <script lang="ts">
 	import MainLayout from 'src/layouts/MainLayout.svelte';
+	export let pb = 32;
 </script>
 
-<MainLayout>
+<MainLayout pb={pb}>
 	<span slot="header"><slot name="header" /></span>
 	<span slot="body">
 		<div class="grid grid-cols-7 gap-4">

@@ -38,7 +38,7 @@
 			<div class="col-span-1 md:col-span-3">
 				<Panel class="h-full">
 					<h2 class="font-bold">CIA - Computer Industry Acronyms</h2>
-					<p>// CD-ROM: Consumer Device, Rendered Obsolete in Months</p>
+					<p>CD-ROM: Consumer Device, Rendered Obsolete in Months</p>
 					<p>ISDN: It Still Does Nothing</p>
 					<p>MIPS: Meaningless Indication of Processor Speed</p>
 					<p>DOS: Defunct Operating System</p>

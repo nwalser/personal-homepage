@@ -11,8 +11,11 @@
 	<title>Nathaniel Walser - Hi</title>
 </svelte:head>
 
-<TwoColumnLayout>
-	<span slot="header"><Title title="Hi. I am Nathaniel Walser." /></span>
+<TwoColumnLayout pb={96}>
+	<span slot="header">
+		<Title title="Hi. I am Nathaniel Walser." />
+		<img src="/hero/programmer-working.svg" alt="programmer working at desk in office" class="absolute bottom-0 right-6 h-[30rem]" />
+	</span>
 	<span slot="body">
 		<Panel>
 			<p>

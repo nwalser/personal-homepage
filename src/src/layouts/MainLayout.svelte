@@ -1,6 +1,9 @@
-<script>
+<script lang="ts">
 	import MenuItem from 'src/components/menu/MenuItem.svelte';
 	import 'src/app.css';
+
+	export let pb: number = 32;
+	export let mt: number = 36;
 
 	let menuOpen = false;
 
@@ -10,7 +13,7 @@
 </script>
 
 <div class="min-h-full">
-	<div class="bg-gray-800 pb-32">
+	<div class="bg-gray-800 relative z-0" style="padding-bottom: {pb/4}rem;">
 		<nav class="bg-gray-800">
 			<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 				<div class="border-b border-gray-700">
@@ -107,7 +110,7 @@
 		<slot name="header" />
 	</div>
 
-	<main class="-mt-36">
+	<main class="z-10 relative" style="margin-top: -{mt/4}rem;">
 		<div
 			class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 text-xl tracking-tight font-light text-slate-800 text-justify"
 		>
