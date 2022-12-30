@@ -14,7 +14,7 @@
 <TwoColumnLayout pb={96}>
 	<span slot="header">
 		<Title title="Hi. I am Nathaniel Walser." />
-		<img src="/hero/programmer-working.svg" alt="programmer working at desk in office" class="absolute bottom-0 right-6 h-[30rem]" />
+		<img src="/hero/programmer-working.svg" alt="programmer working at desk in office" class="absolute bottom-0 -right-32 md:right-0 lg:right-6 h-[30rem] max-w-none" />
 	</span>
 	<span slot="body">
 		<Panel>
