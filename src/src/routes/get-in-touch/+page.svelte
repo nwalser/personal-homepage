@@ -1,7 +1,8 @@
 <script>
-	import Container from 'src/components/Container.svelte';
-	import SocialLinks from 'src/components/SocialLinks.svelte';
+	import Panel from 'src/components/Panel.svelte';
 	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
+	import GridList from 'src/components/grid-list/GridList.svelte';
+	import GridListItem from 'src/components/grid-list/GridListItem.svelte';
 </script>
 
 <svelte:head>
@@ -11,13 +12,36 @@
 <TwoColumnLayout>
 	<span slot="title">Get in Touch</span>
 	<span slot="body">
-		<Container>
+		<Panel>
 			<p>You can get in touch with me via one of the social networks provided on the right side.</p>
 			<br />
-			<p>Alternatively I am also reachable via the following e-mail: <a href="mailto:nathaniel.walser@esp-engineering.com">nathaniel.walser@esp-engineering.com</a></p>
-		</Container>
+			<p>
+				Alternatively I am also reachable via the following e-mail: <a
+					href="mailto:nathaniel.walser@esp-engineering.com">nathaniel.walser@esp-engineering.com</a
+				>
+			</p>
+		</Panel>
 	</span>
 	<span slot="side">
-		<SocialLinks />
+		<GridList>
+			<GridListItem
+				title="Linkedin"
+				subtitle="nathaniel-walser"
+				href="https://www.linkedin.com/in/nathaniel-walser/"
+				src="/logos/linkedin.svg"
+			/>
+			<GridListItem
+				title="Github"
+				subtitle="nwalser"
+				href="https://github.com/nwalser"
+				src="/logos/github.svg"
+			/>
+			<GridListItem
+				title="Stackoverflow"
+				subtitle="nathaniel-walser"
+				href="https://stackoverflow.com/users/10315352/nathaniel-walser"
+				src="/logos/stackoverflow.svg"
+			/>
+		</GridList>
 	</span>
 </TwoColumnLayout>
