@@ -1,4 +1,5 @@
 <script lang="ts">
+	import {MetaTags} from 'svelte-meta-tags';
 	import Panel from 'src/components/Panel.svelte';
 	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
 	import TimelineHeading from 'src/components/timeline/TimelineHeading.svelte';
@@ -26,9 +27,12 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Nathaniel Walser - Hi</title>
-</svelte:head>
+<MetaTags
+	title="Hi!"
+	titleTemplate="%s - Nathaniel Walser"
+	description="I am a 21 year old fullstack developer based in Saint Gallen, Switzerland. I have worked on a number of projects, 
+					including creating software algorithms with neuronal for surface inspection and quality assurance."
+/>
 
 <TwoColumnLayout pb={110}>
 	<span slot="header">

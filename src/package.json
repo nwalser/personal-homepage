@@ -43,6 +43,7 @@
 		"prism-theme-vars": "^0.2.4",
 		"prism-themes": "^1.9.0",
 		"svelte-inline-svg": "^1.2.0",
+		"svelte-meta-tags": "^2.6.4",
 		"typed.js": "^2.0.12"
 	}
 }
