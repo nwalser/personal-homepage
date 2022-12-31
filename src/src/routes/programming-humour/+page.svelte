@@ -1,4 +1,5 @@
 <script>
+	import { MetaTags } from 'svelte-meta-tags';
 	import Panel from 'src/components/Panel.svelte';
 	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
 	import Prose from 'src/components/Prose.svelte';
@@ -6,9 +7,12 @@
 	import GridListItem from 'src/components/grid-list/GridListItem.svelte';
 </script>
 
-<svelte:head>
-	<title>Nathaniel Walser - Programming Humour</title>
-</svelte:head>
+<MetaTags
+	title="Programming Humour"
+	titleTemplate="%s - Nathaniel Walser"
+	description="I am a 21 year old fullstack developer based in Saint Gallen, Switzerland. I have worked on a number of projects, 
+					including creating software algorithms with neuronal for surface inspection and quality assurance."
+/>
 
 <TwoColumnLayout>
 	<span slot="header">
