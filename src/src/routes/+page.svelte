@@ -66,7 +66,7 @@
 			</Prose>
 		</Panel>
 
-		<Panel title="Education">
+		<Panel>
 			<Prose>
 				<h2>Education</h2>
 				<div class="not-prose">
@@ -94,10 +94,6 @@
 						<TimelineSubheading
 							title="Education as Automation Engineer"
 							subtitle="August 2016 - July 2020"
-						/>
-						<TimelineSubheading
-							title="Vocational Baccalaureate School"
-							subtitle="August 2016 - July 2020"
 							lastElement={true}
 						/>
 					</Timeline>
@@ -120,33 +116,21 @@
 						/>
 						<TimelineSubheading
 							title="Junior Fullstack Developer .NET/C#"
-							subtitle="August 2022 - Today (40%)"
-						/>
-						<TimelineSubheading
-							title="Junior Fullstack Developer .NET/C#"
-							subtitle="August 2020 - July 2022 (100%)"
-						/>
+							subtitle="August 2020 - Today (40%)"
+						>
+							<span slot="body">
+								I develop vision based algorithms, machine controlling interfaces and data
+								management platforms that are tailored to customer specifications.
+							</span>
+						</TimelineSubheading>
 						<TimelineSubheading
 							title="Junior Web Developer"
 							subtitle="January 2016 - August 2020 (Freelancer)"
 							lastElement={true}
-						/>
-
-						<TimelineHeading
-							title="Schule Waldstatt"
-							subtitle="1 year"
-							src="/logos/schule-waldstatt.svg"
-							href="https://www.schule-waldstatt.ch/"
-							newTarget={true}
-						/>
-						<TimelineSubheading
-							title="Teacher Assistant"
-							subtitle="August 2021 - July 2022 (100%)"
-							lastElement={true}
 						>
 							<span slot="body">
-								During my civil service I was able to work at a school based in Waldstatt, where I
-								mainly supported teachers in teaching fifth to ninth graders.
+								As a freelancer, I developed websites and built the local ICT infrastructure for
+								esp-engineering.
 							</span>
 						</TimelineSubheading>
 
@@ -162,9 +146,9 @@
 							subtitle="August 2016 - July 2020 (100%)"
 						>
 							<span slot="body">
-								Apprentice as Automation Engineer Ended my apprenticeship with the development of a
-								vibration analysis device that could be clamped onto machines to determine the
-								expected remaining lifespan of a component.
+								I ended my apprenticeship with the development of a vibration analysis device that
+								could be clamped onto machines to determine the expected remaining lifespan of a
+								certain component.
 							</span>
 						</TimelineSubheading>
 						<TimelineSubheading
@@ -173,8 +157,7 @@
 							lastElement={true}
 						>
 							<span slot="body">
-								As a team of four apprentices, we worked abroad in Bangalore for about 4 months. We
-								were able to not only extend our expertise but our intercultural knowledge as well.
+								As a team of four apprentices, we worked abroad in Bangalore for 4 months.
 							</span>
 						</TimelineSubheading>
 					</Timeline>
