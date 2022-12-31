@@ -1,6 +1,6 @@
 <script lang="ts">
 	import MainLayout from 'src/layouts/MainLayout.svelte';
-	export let pb = 32;
+	export let pb = 56;
 </script>
 
 <MainLayout pb={pb}>
