@@ -1,10 +1,31 @@
-<script>
+<script lang="ts">
 	import Panel from 'src/components/Panel.svelte';
 	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
 	import TimelineHeading from 'src/components/timeline/TimelineHeading.svelte';
 	import Timeline from 'src/components/timeline/Timeline.svelte';
 	import TimelineSubheading from 'src/components/timeline/TimelineSubheading.svelte';
 	import Title from 'src/components/headers/Title.svelte';
+
+	let zhawString = getMonthYearDifferenceString(new Date('09.01.2022'), new Date());
+	let espString = getMonthYearDifferenceString(new Date('01.01.2016'), new Date());
+
+	function getMonthYearDifferenceString(startDate: Date, endDate: Date) {
+		let totalMonths =
+			endDate.getMonth() -
+			startDate.getMonth() +
+			12 * (endDate.getFullYear() - startDate.getFullYear());
+
+		let months: number = totalMonths % 12;
+		let years: number = Math.trunc(totalMonths / 12);
+
+		if (years == 0) {
+			return `${months} months`;
+		} else {
+			return `${years} years ${months} months`;
+		}
+	}
+
+	function getMonthYearString(difference: any) {}
 </script>
 
 <svelte:head>
@@ -14,7 +35,11 @@
 <TwoColumnLayout pb={96}>
 	<span slot="header">
 		<Title title="Hi. I am Nathaniel Walser." />
-		<img src="/hero/programmer-working.svg" alt="programmer working at desk in office" class="absolute bottom-0 -right-32 md:right-0 lg:right-6 h-[30rem] max-w-none -z-50" />
+		<img
+			src="/hero/programmer-working.svg"
+			alt="programmer working at desk in office"
+			class="absolute bottom-0 -right-32 md:right-0 lg:right-6 h-[30rem] max-w-none -z-50"
+		/>
 	</span>
 	<span slot="body">
 		<Panel>
@@ -50,7 +75,7 @@
 			<Timeline>
 				<TimelineHeading
 					title="ZHAW: Zurich University of Applied Sciences"
-					subtitle="6 months"
+					subtitle={zhawString}
 					src="/logos/zhaw.svg"
 					href="https://www.zhaw.ch/"
 					newTarget={true}
@@ -87,7 +112,7 @@
 			<Timeline>
 				<TimelineHeading
 					title="esp-engineering gmbh"
-					subtitle="2 years and 4 months"
+					subtitle={espString}
 					src="/logos/esp-engineering.svg"
 					href="https://www.esp-engineering.com/"
 					newTarget={true}
