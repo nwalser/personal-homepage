@@ -10,7 +10,14 @@
 </svelte:head>
 
 <MainLayout>
-	<span slot="header"><Title title="A collection of my favorite programming jokes" subtitle="Updated: 30.12.2022" /></span>
+	<span slot="header">
+		<Title title="A collection of my favorite programming jokes" subtitle="Updated: 30.12.2022" />
+		<img
+			src="/hero/bits.svg"
+			alt="programmer working at desk in office"
+			class="absolute bottom-0 -right-32 md:right-0 lg:right-6 h-[30rem] max-w-none opacity-20 -z-50"
+		/>
+	</span>
 	<span slot="body">
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 			<div>
