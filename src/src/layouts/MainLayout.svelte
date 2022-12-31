@@ -1,9 +1,8 @@
 <script lang="ts">
 	import MenuItem from 'src/components/menu/MenuItem.svelte';
 	import 'src/app.css';
-	import Hero from 'src/components/headers/Hero.svelte';
 
-	export let pb: number = 32;
+	export let pb: number = 56;
 	export let mt: number = 36;
 
 	let menuOpen = false;
@@ -15,7 +14,7 @@
 
 <div class="min-h-screen flex flex-col">
 	<div class="bg-gray-800 relative z-0 overflow-hidden" style="padding-bottom: {pb / 4}rem;">
-		<nav class="bg-gray-800">
+		<nav>
 			<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 				<div class="border-b border-gray-700">
 					<div class="flex h-16 items-center justify-between px-4 sm:px-0">
@@ -113,7 +112,7 @@
 
 	<main class="z-10 relative" style="margin-top: -{mt / 4}rem;">
 		<div
-			class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 text-xl tracking-tight font-light text-slate-800 text-justify"
+			class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 text-slate-800"
 		>
 			<slot name="body" />
 		</div>
@@ -121,31 +120,6 @@
 
 	<footer class="bg-white mt-auto">
 		<div class="mx-auto max-w-7xl overflow-hidden py-3 px-4 sm:px-6 lg:px-8">
-			<!-- <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-			<div class="px-5 py-2">
-			  <a href="#" class="text-base text-gray-500 hover:text-gray-900">About</a>
-			</div>
-	  
-			<div class="px-5 py-2">
-			  <a href="#" class="text-base text-gray-500 hover:text-gray-900">Blog</a>
-			</div>
-	  
-			<div class="px-5 py-2">
-			  <a href="#" class="text-base text-gray-500 hover:text-gray-900">Jobs</a>
-			</div>
-	  
-			<div class="px-5 py-2">
-			  <a href="#" class="text-base text-gray-500 hover:text-gray-900">Press</a>
-			</div>
-	  
-			<div class="px-5 py-2">
-			  <a href="#" class="text-base text-gray-500 hover:text-gray-900">Accessibility</a>
-			</div>
-	  
-			<div class="px-5 py-2">
-			  <a href="#" class="text-base text-gray-500 hover:text-gray-900">Partners</a>
-			</div>
-		  </nav> -->
 			<div class="flex justify-center space-x-6">
 				<a
 					href="https://www.linkedin.com/in/nathaniel-walser/"
