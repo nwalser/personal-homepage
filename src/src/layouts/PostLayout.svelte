@@ -1,8 +1,7 @@
 <script>
 	import Panel from "src/components/Panel.svelte";
 	import Prose from "src/components/Prose.svelte";
-import TwoColumnLayout from "src/layouts/TwoColumnLayout.svelte";
-
+	import TwoColumnLayout from "src/layouts/TwoColumnLayout.svelte";
 </script>
 
 
