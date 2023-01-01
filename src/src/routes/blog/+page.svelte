@@ -24,8 +24,8 @@
 		<div class="not-prose">
 			<PostList>
 				<PostListItem
-					title="Template for Blazor Base Data Component"
-					subtitle="How to setup a blazor base component that can be used to automate the lifecycle of fetching data."
+					title="..."
+					subtitle="..."
 					alt="image of blazor"
 					href="/blog/template-for-blazor-base-component"
 					src="/posts/blazor-header.svg"
