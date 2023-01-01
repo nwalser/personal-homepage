@@ -143,7 +143,7 @@
 					<img class="h-10 w-10" src="/logos/stackoverflow.svg" alt="icon of stackoverflow" />
 				</a>
 			</div>
-			<p class="mt-2 text-center text-base text-gray-400">
+			<p class="mt-2 text-center text-base text-gray-700">
 				&copy; {new Date().getFullYear()} Nathaniel Walser. All rights reserved.
 			</p>
 		</div>
