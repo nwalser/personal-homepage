@@ -1,6 +1,5 @@
 <script>
     import { page } from '$app/stores';
-	import { error } from '@sveltejs/kit';
 	import MainLayout from 'src/layouts/MainLayout.svelte';
 </script>
 

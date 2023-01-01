@@ -5,6 +5,7 @@
 	import GridList from 'src/components/grid-list/GridList.svelte';
 	import GridListItem from 'src/components/grid-list/GridListItem.svelte';
 	import Prose from 'src/components/Prose.svelte';
+	import Hero from 'src/components/headers/Hero.svelte';
 </script>
 
 <MetaTags
@@ -16,11 +17,7 @@
 
 <TwoColumnLayout>
 	<span slot="header">
-		<img
-			src="/hero/bits.svg"
-			alt="programmer working at desk in office"
-			class="absolute bottom-0 -right-32 md:right-0 lg:right-6 h-[30rem] max-w-none opacity-20 -z-50"
-		/>
+		<Hero src="/hero/bits.svg" alt="programmer working at desk in office" />
 	</span>
 	<span slot="body">
 		<Panel>
