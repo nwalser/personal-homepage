@@ -10,8 +10,8 @@
 <MetaTags
 	title="Programming Humour"
 	titleTemplate="%s - Nathaniel Walser"
-	description="I am a 21 year old fullstack developer based in Saint Gallen, Switzerland. I have worked on a number of projects, 
-					including creating software algorithms with neuronal for surface inspection and quality assurance."
+	description="Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the
+	science."
 />
 
 <TwoColumnLayout>
