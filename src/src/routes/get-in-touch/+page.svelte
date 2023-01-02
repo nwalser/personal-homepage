@@ -5,22 +5,18 @@
 	import GridList from 'src/components/grid-list/GridList.svelte';
 	import GridListItem from 'src/components/grid-list/GridListItem.svelte';
 	import Prose from 'src/components/Prose.svelte';
+	import Hero from 'src/components/headers/Hero.svelte';
 </script>
 
 <MetaTags
 	title="Get in Touch"
 	titleTemplate="%s - Nathaniel Walser"
-	description="I am a 21 year old fullstack developer based in Saint Gallen, Switzerland. I have worked on a number of projects, 
-					including creating software algorithms with neuronal for surface inspection and quality assurance."
+	description="You can get in touch with me via one of the social networks provided on the right side."
 />
 
 <TwoColumnLayout>
 	<span slot="header">
-		<img
-			src="/hero/bits.svg"
-			alt="programmer working at desk in office"
-			class="absolute bottom-0 -right-32 md:right-0 lg:right-6 h-[30rem] max-w-none opacity-20 -z-50"
-		/>
+		<Hero src="/hero/bits.svg" alt="programmer working at desk in office" />
 	</span>
 	<span slot="body">
 		<Panel>

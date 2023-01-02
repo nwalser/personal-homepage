@@ -30,6 +30,7 @@
 							</div>
 							<div class="hidden md:block">
 								<div class="ml-10 flex items-baseline space-x-4">
+									<MenuItem href="/technology-stack">Technology Stack</MenuItem>
 									<MenuItem href="/programming-humour">Programming Humour</MenuItem>
 
 									<!-- <MenuItem href="/projects">Projects</MenuItem>
@@ -93,7 +94,9 @@
 			{#if menuOpen}
 				<div class="border-b border-gray-700 md:hidden" id="mobile-menu">
 					<div class="space-y-1 px-2 py-3 sm:px-3">
+						<MenuItem href="/technology-stack" mobile={true}>Technology Stack</MenuItem>
 						<MenuItem href="/programming-humour" mobile={true}>Programming Humour</MenuItem>
+
 						<a
 							href="/get-in-touch"
 							class="inline-flex items-center w-full rounded-md border border-transparent bg-indigo-600 px-3 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
@@ -140,7 +143,7 @@
 					<img class="h-10 w-10" src="/logos/stackoverflow.svg" alt="icon of stackoverflow" />
 				</a>
 			</div>
-			<p class="mt-2 text-center text-base text-gray-400">
+			<p class="mt-2 text-center text-base text-gray-700">
 				&copy; {new Date().getFullYear()} Nathaniel Walser. All rights reserved.
 			</p>
 		</div>

@@ -10,8 +10,8 @@
 <MetaTags
 	title="Programming Humour"
 	titleTemplate="%s - Nathaniel Walser"
-	description="I am a 21 year old fullstack developer based in Saint Gallen, Switzerland. I have worked on a number of projects, 
-					including creating software algorithms with neuronal for surface inspection and quality assurance."
+	description="Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the
+	science."
 />
 
 <TwoColumnLayout>
@@ -26,6 +26,7 @@
 		<Panel>
 			<Prose>
 				<h1>Programming Humour</h1>
+				<h2>Nathaniel's favourite programming Jokes</h2>
 				<blockquote>
 					How many programmers does it take to change a light bulb?
 					<br />None – It’s a hardware problem.
@@ -39,10 +40,6 @@
 					<br />
 					Because they don’t see sharp.
 				</blockquote>
-			</Prose>
-		</Panel>
-		<Panel>
-			<Prose>
 				<h2>CIA - Computer Industry Acronyms</h2>
 				<blockquote>
 					CD-ROM: Consumer Device, Rendered Obsolete in Months<br />
@@ -60,6 +57,8 @@
 					WYSIWYMGIYRRLAAGW: What You See Is What You Might Get If You’re Really Really Lucky And
 					All Goes Well.
 				</blockquote>
+				<h2>Project Cartoon</h2>
+				<img src="/posts/project-cartoon.webp" alt="describing the way people involved in a project imagine the end product" />
 			</Prose>
 		</Panel>
 	</span>
