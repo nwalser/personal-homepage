@@ -1,14 +1,11 @@
 <script lang="ts">
-	import {MetaTags} from 'svelte-meta-tags';
+	import { MetaTags } from 'svelte-meta-tags';
 	import Panel from 'src/components/Panel.svelte';
 	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
 	import TimelineHeading from 'src/components/timeline/TimelineHeading.svelte';
 	import Timeline from 'src/components/timeline/Timeline.svelte';
 	import TimelineSubheading from 'src/components/timeline/TimelineSubheading.svelte';
 	import Prose from 'src/components/Prose.svelte';
-
-	let zhawString = getMonthYearDifferenceString(new Date('09.01.2022'), new Date());
-	let espString = getMonthYearDifferenceString(new Date('01.01.2016'), new Date());
 
 	function getMonthYearDifferenceString(startDate: Date, endDate: Date) {
 		let totalMonths =
@@ -19,11 +16,23 @@
 		let months: number = totalMonths % 12;
 		let years: number = Math.trunc(totalMonths / 12);
 
-		if (years == 0) {
-			return `${months} months`;
-		} else {
-			return `${years} years ${months} months`;
+		let str = "";
+
+		if(years == 1){
+			str += `${years} year `;
 		}
+		if(years > 1){
+			str += `${years} years `;
+		}
+
+		if(months == 1){
+			str += `${months} month`;
+		}
+		if(months > 1){
+			str += `${months} months`;
+		}
+
+		return str;
 	}
 </script>
 
@@ -67,6 +76,22 @@
 					In my free time I fly quadrocopters, learn new technologies and develop plugins for a
 					fully autonomous autopilot.
 				</p>
+				<p>
+					Feel free to have a look around my personal website and if you want to get in touch feel
+					free to contact me.
+				</p>
+				<div class="not-prose justify-end flex">
+					<a
+						href="/technology-stack"
+						class="inline-flex items-center rounded-md border border-transparent bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 mr-2"
+						>Tech Stack</a
+					>
+					<a
+					href="/get-in-to"
+					class="inline-flex items-center rounded-md border border-transparent bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+					>Get in Touch</a
+				>
+				</div>
 			</Prose>
 		</Panel>
 
@@ -77,7 +102,7 @@
 					<Timeline>
 						<TimelineHeading
 							title="ZHAW: Zurich University of Applied Sciences"
-							subtitle={zhawString}
+							subtitle={getMonthYearDifferenceString(new Date('2022-09-01'), new Date())}
 							src="/logos/zhaw.svg"
 							href="https://www.zhaw.ch/"
 							newTarget={true}
@@ -113,7 +138,7 @@
 					<Timeline>
 						<TimelineHeading
 							title="esp-engineering gmbh"
-							subtitle={espString}
+							subtitle={getMonthYearDifferenceString(new Date('2016-01-01'), new Date())}
 							src="/logos/esp-engineering.svg"
 							href="https://www.esp-engineering.com/"
 							newTarget={true}
@@ -140,7 +165,7 @@
 
 						<TimelineHeading
 							title="Buhler Group"
-							subtitle="4 years"
+							subtitle={getMonthYearDifferenceString(new Date('2016-07-01'), new Date('2020-07-01'))}
 							src="/logos/buhler-group.svg"
 							href="https://www.buhlergroup.com/"
 							newTarget={true}
