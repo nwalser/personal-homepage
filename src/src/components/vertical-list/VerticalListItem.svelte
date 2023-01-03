@@ -8,7 +8,7 @@
 </script>
 
 <li>
-	<div class="relative pb-6">
+	<div class="relative mb-5">
 		<div class="relative flex items-start space-x-3">
 			<div class="relative">
 				{#if src != ''}

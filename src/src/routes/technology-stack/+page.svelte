@@ -6,6 +6,8 @@
 	import Hero from 'src/components/headers/Hero.svelte';
 	import VerticalList from 'src/components/vertical-list/VerticalList.svelte';
 	import VerticalListItem from 'src/components/vertical-list/VerticalListItem.svelte';
+	import VerticalListDivider from 'src/components/vertical-list/VerticalListDivider.svelte';
+	import VerticalListButton from 'src/components/vertical-list/VerticalListButton.svelte';
 
 	function getExperienceText(startDate: Date, endDate: Date) {
 		let totalMonths =
@@ -46,8 +48,8 @@
 				<p>
 					In my 10+ years of IT experiences I had the opportunity to learn many awesome
 					technologies. Over the years a go-to technology stack developed, with which I was able to
-					successfully complete many projects. The approximate outline of
-					the technology stack is as follows.
+					successfully complete many projects. The approximate outline of the technology stack is as
+					follows.
 				</p>
 				<h2>Primary Technologies Used</h2>
 				<h3>C# / ASP.NET Core / Blazor</h3>
@@ -57,26 +59,26 @@
 					<span class="font-bold">asp.net core</span> coupled with
 					<span class="font-bold">Blazor</span>.
 				</p>
-				<h3>Kafka / RabbitMQ</h3>
+				<h3>EventStoreDb / MongoDb</h3>
 				<p>
 					About two years ago I shifted my focus mainly on learning design patterns for larger
-					applications with complex business domains. Since then, I use great technologies like
-					<span class="font-bold">Kafka</span> and <span class="font-bold">RabbitMQ</span> for
-					<span class="font-bold">event sourcing</span> and <span class="font-bold">CQRS</span>. For
-					managing those large distributed applications I use Docker with Portainer as a user
-					interface on top of it.
+					applications with complex business domains. Since then, I use technologies like
+					<span class="font-bold">EventStoreDb</span> for event sourcing and
+					<span class="font-bold">MongoDb</span> as a query store.
+				</p>
+				<h3>Docker / Portainer</h3>
+				<p>
+					For managing created microservices I use Docker with Portainer as a user interface on top
+					of it, but I will soon switch to K8 with K8 Lens because some of the needed features are
+					missing in docker swarm.
 				</p>
 				<h3>OpenCV</h3>
-				<p>
-					For my more vision heavy applications that need image processing I use an <span
-						class="font-bold">OpenCV</span
-					> wrapper for c#.
-				</p>
+				<p>For vision based processing tasks I use an OpenCV wrapper for c#.</p>
 				<h2>Secondary Technologies Used</h2>
 				<p>
-					I also use other technologies like Python, C/C++, SQL, Embedded Systems, REST APIs,
-					MongoDB and many more, but I would not consider them as part of my core technology stack,
-					as I am using them differently on project basis.
+					I also use other technologies like Python, C/C++, SQL, REST APIs, Refit,
+					Polly, Autofac, Mapster and many more, but I would not consider them as part of my core
+					technology stack, as I am using them differently on project to project basis.
 				</p>
 			</Prose>
 		</Panel>
@@ -102,31 +104,38 @@
 							subtitle={getExperienceText(new Date('2019-01-01'), new Date())}
 							src="/logos/blazor.svg"
 						/>
-					</VerticalList>
+						<VerticalListDivider />
 
-					<div class="my-5 h-[1px] bg-gray-200"></div>
-				
-					<VerticalList>
 						<VerticalListItem
-							title="Kafka"
-							subtitle="I use Kafka to deliver events to consumers and to persist them for later processing with new microservices."
-							src="/logos/kafka.svg"
+							title="EventStoreDB"
+							subtitle="I use EventStoreDB to store and deliver events to distributed event handlers."
+							src="/logos/eventstore-db.svg"
 						/>
 						<VerticalListItem
 							title="MongoDB"
-							subtitle="I use MongoDB to store the current state of Aggregates for query purposes."
+							subtitle="I use MongoDB to store the current state of aggregates for query purposes."
 							src="/logos/mongodb.svg"
 						/>
-					</VerticalList>
+						<VerticalListButton href="https://github.com/stars/nwalser/lists/awesome-services"
+							>Awesome Services 🏆</VerticalListButton
+						>
+						<VerticalListDivider />
 
-					<div class="my-5 h-[1px] bg-gray-200"></div>
-				
-					<VerticalList>
 						<VerticalListItem
 							title="OpenCV"
 							subtitle="For image processing projects I use an OpenCV wrapper for C#."
 							src="/logos/opencv.svg"
 						/>
+						<VerticalListItem
+							title="MediatR"
+							subtitle="For the implementation of an effective CQRS pattern I use MediatR as broker."
+							src=""
+						/>
+
+						<VerticalListButton
+							href="https://github.com/stars/nwalser/lists/c-net-library-must-haves"
+							>C#/.NET Library Must Haves 👌</VerticalListButton
+						>
 					</VerticalList>
 				</div>
 			</Prose>
