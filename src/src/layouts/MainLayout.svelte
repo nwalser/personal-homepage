@@ -30,8 +30,8 @@
 							</div>
 							<div class="hidden md:block">
 								<div class="ml-10 flex items-baseline space-x-4">
-									<MenuItem href="/technology-stack">Technology Stack</MenuItem>
-									<MenuItem href="/programming-humour">Programming Humour</MenuItem>
+									<MenuItem href="/technology-stack">💻 Technology Stack</MenuItem>
+									<MenuItem href="/programming-humour">😁 Programming Humour</MenuItem>
 
 									<!-- <MenuItem href="/projects">Projects</MenuItem>
 									<MenuItem href="/programming-humor">Programming Humor</MenuItem>
@@ -94,8 +94,8 @@
 			{#if menuOpen}
 				<div class="border-b border-gray-700 md:hidden" id="mobile-menu">
 					<div class="space-y-1 px-2 py-3 sm:px-3">
-						<MenuItem href="/technology-stack" mobile={true}>Technology Stack</MenuItem>
-						<MenuItem href="/programming-humour" mobile={true}>Programming Humour</MenuItem>
+						<MenuItem href="/technology-stack" mobile={true}>💻 Technology Stack</MenuItem>
+						<MenuItem href="/programming-humour" mobile={true}>😁 Programming Humour</MenuItem>
 
 						<a
 							href="/get-in-touch"
