@@ -27,7 +27,7 @@
 								<a href="/">
 									<img
 										class="h-8 w-8 object-cover rounded-full"
-										src="/profile/profile-picture-small.jpeg"
+										src="/profile/profile-picture-small.webp"
 										alt="Nathaniel Walser"
 									/>
 								</a>
