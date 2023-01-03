@@ -1,8 +1,16 @@
 <script lang="ts">
-    import CodeBlock from "./CodeBlock.svelte";
+	import { getContext } from 'svelte';
+	import { TABS } from './CodeBlock.svelte';
 
-    export let name: string;
+	export let name: string;
+
+	let tab = {name: name};
+	const { registerTab, selectedTab } = getContext(TABS);
+
+	registerTab(tab);
 </script>
 
-<button id="">{name}</button>
-<slot />
+
+{#if $selectedTab === tab}
+	<slot></slot>
+{/if}
