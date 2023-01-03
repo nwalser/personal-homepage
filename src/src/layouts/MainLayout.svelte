@@ -1,5 +1,7 @@
 <script lang="ts">
 	import MenuItem from 'src/components/menu/MenuItem.svelte';
+	import Analytics from 'src/components/Analytics.svelte';
+
 	import 'src/app.css';
 
 	export let pb: number = 56;
@@ -11,6 +13,8 @@
 		menuOpen = !menuOpen;
 	}
 </script>
+
+<Analytics />
 
 <div class="min-h-screen flex flex-col">
 	<div class="bg-gray-800 relative z-0 overflow-hidden" style="padding-bottom: {pb / 4}rem;">
