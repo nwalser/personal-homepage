@@ -1,16 +1,16 @@
 <script lang="ts">
   import { page } from '$app/stores'
 
+  export let measurementId: string = "G-QFNRM1L7Q1";
+
   $: {
     if (typeof gtag !== 'undefined') {
-      gtag('config', 'MEASUREMENT_ID', {
+      gtag('config', 'G-QFNRM1L7Q1', {
         page_title: document.title,
         page_path: $page.url.pathname,
       })
     }
   }
-
-  export let measurementId: string = "G-QFNRM1L7Q1";
 </script>
 
 <svelte:head>
@@ -26,6 +26,6 @@
     }
 
     gtag('js', new Date())
-    gtag('config', 'MEASUREMENT_ID')
+    gtag('config', 'G-QFNRM1L7Q1')
   </script>
 </svelte:head>
