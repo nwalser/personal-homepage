@@ -53,6 +53,6 @@
 	</div>
 </div>
 
-<div class="tabs text-sm">
+<div class="tabs text-sm code-selection" style="">
 	<slot />
 </div>

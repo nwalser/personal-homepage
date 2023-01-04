@@ -10,6 +10,9 @@ updated: "2023/01/04"
     import CodeBlock from "src/components/code-block/CodeBlock.svelte";
     import CodeBlockTab from "src/components/code-block/CodeBlockTab.svelte";
 
+    import ButtonList from "src/components/button-list/ButtonList.svelte";
+    import ButtonListItem from "src/components/button-list/ButtonListItem.svelte";
+
     import DockerCompose from "./docker-compose.svx";
 
     import CSharpInstall from "./csharp-install.svx";
@@ -31,7 +34,7 @@ updated: "2023/01/04"
 # {title}
 
 ## Install EventStoreDb
-Create a **docker-compose.yml** in an empty directory. Copy the following content into the newly created file. 
+Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created file. 
 
 <CodeBlock>
     <CodeBlockTab name="docker-compose.yml">
@@ -65,7 +68,7 @@ First off, you need to install the gRPC client SDK inside of your project. To do
     </CodeBlockTab>
 </CodeBlock>
 
-After the installation you can use EventStoreDb in your code like following:
+After the installation you can create and EventStoreDb client as following:
 
 <CodeBlock>
     <CodeBlockTab name="C#">
@@ -88,4 +91,13 @@ After the installation you can use EventStoreDb in your code like following:
     </CodeBlockTab>
 </CodeBlock>
 
-## Get started with the Webinterface
+<ButtonList>
+    <ButtonListItem title="Continue at official EventStoreDb documentation" href="https://developers.eventstore.com/clients/grpc/#creating-an-event" newTarget={true} />
+</ButtonList>
+
+## Get started with the Admin UI
+After installation, your EventStoreDb admin ui is available under `host.docker.internal:2113`
+
+<ButtonList>
+    <ButtonListItem title="View your local Admin Dashboard" href="http://host.docker.internal:2113" newTarget={true} />
+</ButtonList>
