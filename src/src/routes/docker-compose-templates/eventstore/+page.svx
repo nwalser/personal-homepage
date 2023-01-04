@@ -1,0 +1,50 @@
+---
+title: "Docker Compose template for EventStoreDb"
+description: "Get started with eventstoredb and docker compose quickly."
+created: "2023/01/04"
+updated: "2023/01/04"
+---
+
+<script>
+    import CodeBlock from "src/components/code-block/CodeBlock.svelte";
+    import CodeBlockTab from "src/components/code-block/CodeBlockTab.svelte";
+
+    import DockerCompose from "./docker-compose.svx";
+
+    import CSharpConnect from "./csharp-connect.svx";
+    import GoConnect from "./go-connect.svx";
+    import JavaConnect from "./java-connect.svx";
+    import JavaScriptConnect from "./javascript-connect.svx";
+    import RustConnect from "./rust-connect.svx";
+    import TypeScriptConnect from "./typescript-connect.svx";
+</script>
+
+# {title}
+
+<CodeBlock>
+    <CodeBlockTab name="docker-compose.yml">
+        <DockerCompose />
+    </CodeBlockTab>
+</CodeBlock>
+
+## How to connect with a gRPC Client
+<CodeBlock>
+    <CodeBlockTab name="C#">
+        <CSharpConnect />
+    </CodeBlockTab>
+    <CodeBlockTab name="Go">
+        <GoConnect />
+    </CodeBlockTab>
+    <CodeBlockTab name="Java">
+        <JavaConnect />
+    </CodeBlockTab>
+    <CodeBlockTab name="JavaScript">
+        <JavaScriptConnect />
+    </CodeBlockTab>
+    <CodeBlockTab name="Rust">
+        <RustConnect />
+    </CodeBlockTab>
+    <CodeBlockTab name="TypeScript">
+        <TypeScriptConnect />
+    </CodeBlockTab>
+</CodeBlock>

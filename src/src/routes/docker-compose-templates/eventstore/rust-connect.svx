@@ -1,0 +1,8 @@
+---
+layout: false
+---
+
+```rust
+let settings = "esdb+discover://host.docker.internal:2113".parse()?;
+let client = Client::new(settings)?;
+```

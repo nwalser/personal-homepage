@@ -40,6 +40,7 @@
 								<div class="ml-10 flex items-baseline space-x-4">
 									<MenuItem href="/technology-stack">💻 Technology Stack</MenuItem>
 									<MenuItem href="/programming-humour">😁 Programming Humour</MenuItem>
+									<MenuItem href="/docker-compose-templates">Docker Compose Templates</MenuItem>
 								</div>
 							</div>
 						</div>

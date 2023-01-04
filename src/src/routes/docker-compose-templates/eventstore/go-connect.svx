@@ -1,0 +1,13 @@
+---
+layout: false
+---
+
+```go
+settings, err := esdb.ParseConnectionString("esdb+discover://host.docker.internal:2113")
+
+if err != nil {
+    panic(err)
+}
+
+db, err := esdb.NewClient(settings)
+```

@@ -1,11 +1,20 @@
-<script>
+<script lang="ts">
 	import Panel from "src/components/Panel.svelte";
 	import Prose from "src/components/Prose.svelte";
-	import TwoColumnLayout from "src/layouts/TwoColumnLayout.svelte";
+	import { MetaTags } from "svelte-meta-tags";
+	import MainLayout from "./MainLayout.svelte";
+
+	export let title: string;
+	export let description: string;
 </script>
 
+<MetaTags
+	title={title}
+	titleTemplate="%s - Nathaniel Walser"
+	description={description}
+/>
 
-<TwoColumnLayout>
+<MainLayout>
     <span slot="header">
 		<img
 			src="/hero/bits.svg"
@@ -20,7 +29,4 @@
 			</Prose>
 		</Panel>
 	</span>
-	<span slot="side">
-
-	</span>
-</TwoColumnLayout>
+</MainLayout>

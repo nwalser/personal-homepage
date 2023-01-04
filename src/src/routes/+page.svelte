@@ -16,19 +16,19 @@
 		let months: number = totalMonths % 12;
 		let years: number = Math.trunc(totalMonths / 12);
 
-		let str = "";
+		let str = '';
 
-		if(years == 1){
+		if (years == 1) {
 			str += `${years} year `;
 		}
-		if(years > 1){
+		if (years > 1) {
 			str += `${years} years `;
 		}
 
-		if(months == 1){
+		if (months == 1) {
 			str += `${months} month`;
 		}
-		if(months > 1){
+		if (months > 1) {
 			str += `${months} months`;
 		}
 
@@ -87,10 +87,10 @@
 						>Tech Stack</a
 					>
 					<a
-					href="/get-in-to"
-					class="inline-flex items-center rounded-md border border-transparent bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-					>Get in Touch</a
-				>
+						href="/get-in-to"
+						class="inline-flex items-center rounded-md border border-transparent bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+						>Get in Touch</a
+					>
 				</div>
 			</Prose>
 		</Panel>
@@ -165,7 +165,10 @@
 
 						<TimelineHeading
 							title="Buhler Group"
-							subtitle={getMonthYearDifferenceString(new Date('2016-07-01'), new Date('2020-07-01'))}
+							subtitle={getMonthYearDifferenceString(
+								new Date('2016-07-01'),
+								new Date('2020-07-01')
+							)}
 							src="/logos/buhler-group.svg"
 							href="https://www.buhlergroup.com/"
 							newTarget={true}
