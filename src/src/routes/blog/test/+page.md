@@ -8,11 +8,6 @@
 
 # Hello
 
-<CodeBlock>
-    <CodeBlockTab name="Test">
-        <Code1 />
-    </CodeBlockTab>
-    <CodeBlockTab name="Test2">
-        <Code2 />
-    </CodeBlockTab>
-</CodeBlock>
+<Code1 />
+
+<Code2 />
