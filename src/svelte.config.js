@@ -13,7 +13,7 @@ const config = {
 		mdsvex({
 		  extensions: ['.svx'],
 		  layout: {
-			_: 'src/layouts/PostLayout.svelte',
+			post: 'src/layouts/PostLayout.svelte',
 		  },
 		})
 	  ],

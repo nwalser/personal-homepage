@@ -1,7 +1,3 @@
----
-layout: false
----
-
 ```csharp
 var settings = EventStoreClientSettings
     .Create("esdb+discover://host.docker.internal:2113");

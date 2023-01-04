@@ -1,0 +1,14 @@
+```powershell
+# Maven
+<dependency>
+  <groupId>com.eventstore</groupId>
+  <artifactId>db-client-java</artifactId>
+  <version>0.5</version>
+</dependency>
+
+# Gradle
+implementation 'com.eventstore:db-client-java:0.5'
+
+# SBT
+libraryDependencies += "com.eventstore" % "db-client-java" % "0.6"
+```

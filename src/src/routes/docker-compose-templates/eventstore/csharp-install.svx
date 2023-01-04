@@ -1,0 +1,8 @@
+```powershell
+# CLI
+dotnet add package EventStore.Client.Grpc.Streams --version 21.2
+
+# Nuget PM
+Install-Package EventStore.Client.Grpc.Streams --version 21.2
+```
+

@@ -1,7 +1,3 @@
----
-layout: false
----
-
 ```go
 settings, err := esdb.ParseConnectionString("esdb+discover://host.docker.internal:2113")
 

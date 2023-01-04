@@ -4,14 +4,14 @@
 	import { MetaTags } from "svelte-meta-tags";
 	import MainLayout from "./MainLayout.svelte";
 
-	export let title: string;
-	export let description: string;
+	// export let title: string = "";
+	// export let description: string = "";
 </script>
 
 <MetaTags
-	title={title}
+	title=""
 	titleTemplate="%s - Nathaniel Walser"
-	description={description}
+	description=""
 />
 
 <MainLayout>

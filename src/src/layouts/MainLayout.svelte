@@ -40,7 +40,7 @@
 								<div class="ml-10 flex items-baseline space-x-4">
 									<MenuItem href="/technology-stack">💻 Technology Stack</MenuItem>
 									<MenuItem href="/programming-humour">😁 Programming Humour</MenuItem>
-									<MenuItem href="/docker-compose-templates">Docker Compose Templates</MenuItem>
+									<MenuItem href="/docker-compose-templates">📄 Docker Compose Templates</MenuItem>
 								</div>
 							</div>
 						</div>
@@ -100,6 +100,7 @@
 					<div class="space-y-1 px-2 py-3 sm:px-3">
 						<MenuItem href="/technology-stack" mobile={true}>💻 Technology Stack</MenuItem>
 						<MenuItem href="/programming-humour" mobile={true}>😁 Programming Humour</MenuItem>
+						<MenuItem href="/docker-compose-templates" mobile={true}>📄 Docker Compose Templates</MenuItem>
 
 						<a
 							href="/get-in-touch"

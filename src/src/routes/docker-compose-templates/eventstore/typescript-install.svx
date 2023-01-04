@@ -1,0 +1,9 @@
+```powershell
+# TypeScript Declarations are included in the package.
+
+# Yarn
+$ yarn add @eventstore/db-client
+
+# NPM
+$ npm install --save @eventstore/db-client
+```
