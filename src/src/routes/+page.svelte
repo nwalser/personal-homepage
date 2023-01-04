@@ -37,7 +37,7 @@
 </script>
 
 <MetaTags
-	title="Hi!"
+	title="About Me"
 	titleTemplate="%s - Nathaniel Walser"
 	description="I am a 21 year old fullstack developer based in Saint Gallen, Switzerland. I have worked on a number of projects, 
 					including creating software algorithms with neuronal for surface inspection and quality assurance."
