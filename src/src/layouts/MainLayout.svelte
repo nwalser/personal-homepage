@@ -145,7 +145,7 @@
 				</a>
 			</div>
 			<p class="mt-2 text-center text-base text-gray-700">
-				&copy; {new Date().getFullYear()} Nathaniel Walser. All rights reserved.
+				&copy; {new Date().getFullYear()} Nathaniel Walser. All rights reserved. <a href="https://github.com/nwalser/personal-homepage" class="underline">Code available on GitHub</a>
 			</p>
 		</div>
 	</footer>
