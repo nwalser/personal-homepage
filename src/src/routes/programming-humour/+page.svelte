@@ -26,7 +26,7 @@
 		<Panel>
 			<Prose>
 				<h1>Programming Humour</h1>
-				<h2>Nathaniel's favourite programming Jokes</h2>
+				<h2>My favourite programming Jokes</h2>
 				<blockquote>
 					How many programmers does it take to change a light bulb?
 					<br />None – It’s a hardware problem.

@@ -6,7 +6,6 @@
 	import GridListItem from 'src/components/grid-list/GridListItem.svelte';
 	import Prose from 'src/components/Prose.svelte';
 	import Hero from 'src/components/headers/Hero.svelte';
-	import App from 'src/components/code-block/App.svelte';
 </script>
 
 <MetaTags
