@@ -27,7 +27,7 @@ updated: "2023/01/04"
     </CodeBlockTab>
 </CodeBlock>
 
-## How to connect with a gRPC Client
+## Get started with the gRPC Client
 <CodeBlock>
     <CodeBlockTab name="C#">
         <CSharpConnect />
