@@ -1,0 +1,103 @@
+---
+layout: post
+title: "Deploy EventStoreDb with Docker Compose"
+description: "This Docker Compose Template gets you started with EventStoreDb quickly."
+created: "2023/01/04"
+updated: "2023/01/04"
+---
+
+<script>
+    import CodeBlock from "src/components/code-block/CodeBlock.svelte";
+    import CodeBlockTab from "src/components/code-block/CodeBlockTab.svelte";
+
+    import ButtonList from "src/components/button-list/ButtonList.svelte";
+    import ButtonListItem from "src/components/button-list/ButtonListItem.svelte";
+
+    import DockerCompose from "./docker-compose.svx";
+
+    import CSharpInstall from "./csharp-install.svx";
+    import GoInstall from "./go-install.svx";
+    import JavaInstall from "./java-install.svx";
+    import JavaScriptInstall from "./javascript-install.svx";
+    import RustInstall from "./rust-install.svx";
+    import TypeScriptInstall from "./typescript-install.svx";
+
+
+    import CSharpConnect from "./csharp-connect.svx";
+    import GoConnect from "./go-connect.svx";
+    import JavaConnect from "./java-connect.svx";
+    import JavaScriptConnect from "./javascript-connect.svx";
+    import RustConnect from "./rust-connect.svx";
+    import TypeScriptConnect from "./typescript-connect.svx";
+</script>
+
+# {title}
+
+## Install EventStoreDb
+Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created file. 
+
+<CodeBlock>
+    <CodeBlockTab name="docker-compose.yml">
+        <DockerCompose />
+    </CodeBlockTab>
+</CodeBlock>
+
+Run `docker-compose up` in your terminal inside this folder to download and start the EventStoreDb container.
+
+## Get started with the gRPC Client
+First off, you need to install the gRPC client SDK inside of your project. To do this run the following commands:
+
+<CodeBlock>
+    <CodeBlockTab name="C#">
+        <CSharpInstall />
+    </CodeBlockTab>
+    <CodeBlockTab name="Go">
+        <GoInstall />
+    </CodeBlockTab>
+    <CodeBlockTab name="Java">
+        <JavaInstall />
+    </CodeBlockTab>
+    <CodeBlockTab name="JavaScript">
+        <JavaScriptInstall />
+    </CodeBlockTab>
+    <CodeBlockTab name="Rust">
+        <RustInstall />
+    </CodeBlockTab>
+    <CodeBlockTab name="TypeScript">
+        <TypeScriptInstall />
+    </CodeBlockTab>
+</CodeBlock>
+
+After the installation you can create and EventStoreDb client as following:
+
+<CodeBlock>
+    <CodeBlockTab name="C#">
+        <CSharpConnect />
+    </CodeBlockTab>
+    <CodeBlockTab name="Go">
+        <GoConnect />
+    </CodeBlockTab>
+    <CodeBlockTab name="Java">
+        <JavaConnect />
+    </CodeBlockTab>
+    <CodeBlockTab name="JavaScript">
+        <JavaScriptConnect />
+    </CodeBlockTab>
+    <CodeBlockTab name="Rust">
+        <RustConnect />
+    </CodeBlockTab>
+    <CodeBlockTab name="TypeScript">
+        <TypeScriptConnect />
+    </CodeBlockTab>
+</CodeBlock>
+
+<ButtonList>
+    <ButtonListItem title="Continue at official EventStoreDb documentation" href="https://developers.eventstore.com/clients/grpc/#creating-an-event" newTarget={true} />
+</ButtonList>
+
+## Get started with the Admin UI
+After installation, your EventStoreDb admin ui is available under `host.docker.internal:2113`
+
+<ButtonList>
+    <ButtonListItem title="View your local Admin Dashboard" href="http://host.docker.internal:2113" newTarget={true} />
+</ButtonList>

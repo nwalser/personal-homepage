@@ -16,6 +16,10 @@
 
 <Analytics />
 
+<svelte:head>
+	<meta name="theme-color" content="#1f2937"/>
+</svelte:head>
+
 <div class="min-h-screen flex flex-col">
 	<div class="bg-gray-800 relative z-0 overflow-hidden" style="padding-bottom: {pb / 4}rem;">
 		<nav>
@@ -36,10 +40,7 @@
 								<div class="ml-10 flex items-baseline space-x-4">
 									<MenuItem href="/technology-stack">💻 Technology Stack</MenuItem>
 									<MenuItem href="/programming-humour">😁 Programming Humour</MenuItem>
-
-									<!-- <MenuItem href="/projects">Projects</MenuItem>
-									<MenuItem href="/programming-humor">Programming Humor</MenuItem>
-									<MenuItem href="/awesome-code-snippets">Awesome Code Snippets</MenuItem> -->
+									<MenuItem href="/docker-compose-templates">📄 Docker Compose Templates</MenuItem>
 								</div>
 							</div>
 						</div>
@@ -54,7 +55,6 @@
 						</div>
 
 						<div class="-mr-2 flex md:hidden">
-							<!-- Mobile menu button -->
 							<button
 								type="button"
 								class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -100,16 +100,13 @@
 					<div class="space-y-1 px-2 py-3 sm:px-3">
 						<MenuItem href="/technology-stack" mobile={true}>💻 Technology Stack</MenuItem>
 						<MenuItem href="/programming-humour" mobile={true}>😁 Programming Humour</MenuItem>
+						<MenuItem href="/docker-compose-templates" mobile={true}>📄 Docker Compose Templates</MenuItem>
 
 						<a
 							href="/get-in-touch"
 							class="inline-flex items-center w-full rounded-md border border-transparent bg-indigo-600 px-3 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
 							>Get in Touch</a
 						>
-
-						<!-- <MenuItem href="/projects" mobile={true}>Projects</MenuItem>
-						<MenuItem href="/programming-humor" mobile={true}>Programming Humor</MenuItem>
-						<MenuItem href="/awesome-code-snippets" mobile={true}>Awesome Code Snippets</MenuItem> -->
 					</div>
 				</div>
 			{/if}
@@ -148,7 +145,7 @@
 				</a>
 			</div>
 			<p class="mt-2 text-center text-base text-gray-700">
-				&copy; {new Date().getFullYear()} Nathaniel Walser. All rights reserved.
+				&copy; {new Date().getFullYear()} Nathaniel Walser. All rights reserved. <a href="https://github.com/nwalser/personal-homepage" class="underline">Code available on GitHub</a>
 			</p>
 		</div>
 	</footer>

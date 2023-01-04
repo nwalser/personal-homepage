@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { MetaTags } from 'svelte-meta-tags';
 	import Panel from 'src/components/Panel.svelte';
 	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
@@ -26,7 +26,7 @@
 		<Panel>
 			<Prose>
 				<h1>Programming Humour</h1>
-				<h2>Nathaniel's favourite programming Jokes</h2>
+				<h2>My favourite programming Jokes</h2>
 				<blockquote>
 					How many programmers does it take to change a light bulb?
 					<br />None – It’s a hardware problem.
@@ -40,6 +40,12 @@
 					<br />
 					Because they don’t see sharp.
 				</blockquote>
+				<blockquote>
+					Programming is like sex:
+					<br />
+					One mistake and you have to support it for the rest of your life.
+				</blockquote>
+
 				<h2>CIA - Computer Industry Acronyms</h2>
 				<blockquote>
 					CD-ROM: Consumer Device, Rendered Obsolete in Months<br />
@@ -58,7 +64,10 @@
 					All Goes Well.
 				</blockquote>
 				<h2>Project Cartoon</h2>
-				<img src="/posts/project-cartoon.webp" alt="describing the way people involved in a project imagine the end product" />
+				<img
+					src="/posts/project-cartoon.webp"
+					alt="describing the way people involved in a project imagine the end product"
+				/>
 			</Prose>
 		</Panel>
 	</span>

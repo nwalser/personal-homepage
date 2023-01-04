@@ -1,0 +1,5 @@
+```java
+EventStoreDBClientSettings settings = EventStoreDBConnectionString
+    .parse("esdb+discover://host.docker.internal:2113");
+EventStoreDBClient client = EventStoreDBClient.create(settings);
+```

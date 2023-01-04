@@ -1,0 +1,3 @@
+```javascript
+const client = EventStoreDBClient.connectionString`esdb+discover://host.docker.internal:2113`;
+```

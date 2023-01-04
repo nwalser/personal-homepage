@@ -1,0 +1,7 @@
+```powershell
+# Yarn
+yarn add @eventstore/db-client
+
+# NPM
+npm install --save @eventstore/db-client
+```

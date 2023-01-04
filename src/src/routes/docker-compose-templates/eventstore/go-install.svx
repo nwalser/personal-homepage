@@ -1,0 +1,4 @@
+```powershell
+# CLI
+go get github.com/EventStore/EventStore-Client-Go
+```
