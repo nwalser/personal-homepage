@@ -1,9 +1,11 @@
 <script>
 	import { MetaTags } from 'svelte-meta-tags';
 	import Panel from 'src/components/Panel.svelte';
-	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
 	import Prose from 'src/components/Prose.svelte';
 	import Hero from 'src/components/headers/Hero.svelte';
+	import MainLayout from 'src/layouts/MainLayout.svelte';
+	import PostList from 'src/components/post-list/PostList.svelte';
+	import PostListItem from 'src/components/post-list/PostListItem.svelte';
 </script>
 
 <MetaTags
@@ -12,7 +14,7 @@
 	description="Templates for docker compose to be able to start quickly."
 />
 
-<TwoColumnLayout>
+<MainLayout>
 	<span slot="header">
 		<Hero src="/hero/bits.svg" alt="programmer working at desk in office" />
 	</span>
@@ -20,13 +22,17 @@
 		<Panel>
 			<Prose>
 				<h1>Docker Compose Templates</h1>
-				<a
-					href="/docker-compose-templates/eventstore"
-					class="inline-flex items-center rounded-md border border-transparent bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-					>Docker Compose template for EventStoreDb</a
-				>
 			</Prose>
 		</Panel>
+
+		<PostList>
+			<PostListItem
+				title="Docker Compose template for EventStoreDb"
+				href="/docker-compose-templates/eventstore"
+				subtitle="This Docker Compose Template gets you started with EventStoreDb quickly."
+				src="/docker-compose-templates/eventstore/header.svg"
+				alt="eventstore db logo"
+			/>
+		</PostList>
 	</span>
-	<span slot="side" />
-</TwoColumnLayout>
+</MainLayout>
