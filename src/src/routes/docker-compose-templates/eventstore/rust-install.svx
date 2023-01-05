@@ -1,3 +1,4 @@
 ```powershell
-# No additional configuration is needed having Rust installed. Go check https://rustup.rs.
+# No additional configuration is needed having Rust installed. 
+# Go check https://rustup.rs.
 ```

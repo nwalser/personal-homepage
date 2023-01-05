@@ -5,10 +5,16 @@
 	export let alt: string = '';
 	export let href: string = '';
 	export let newTarget: boolean = false;
+	export let lastItem: boolean = false;
+
+	let mb = "mb-5"
+	if(lastItem){
+		mb = "mb-0"
+	}
 </script>
 
 <li>
-	<div class="relative mb-5">
+	<div class="relative {mb}">
 		<div class="relative flex items-start space-x-3">
 			<div class="relative">
 				{#if src != ''}
