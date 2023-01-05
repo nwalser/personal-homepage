@@ -32,6 +32,15 @@
 				subtitle="This Docker Compose Template gets you started with EventStoreDb quickly."
 				src="/docker-compose-templates/eventstore/header.svg"
 				alt="eventstore db logo"
+				color="bg-green-100"
+			/>
+			<PostListItem
+				title="Docker Compose template for MinIO"
+				href="/docker-compose-templates/minio"
+				subtitle="This Docker Compose Template gets you started with MinIO quickly."
+				src="/docker-compose-templates/minio/header.svg"
+				alt="eventstore db logo"
+				color="bg-red-100"
 			/>
 		</PostList>
 	</span>

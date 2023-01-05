@@ -1,0 +1,82 @@
+---
+layout: post
+title: "Deploy MinIO with Docker Compose"
+description: "This Docker Compose Template gets you started with MinIO quickly."
+created: "2023/01/05"
+updated: "2023/01/05"
+---
+
+<script>
+    import CodeBlock from "src/components/code-block/CodeBlock.svelte";
+    import CodeBlockTab from "src/components/code-block/CodeBlockTab.svelte";
+
+    import ButtonList from "src/components/button-list/ButtonList.svelte";
+    import ButtonListItem from "src/components/button-list/ButtonListItem.svelte";
+
+    import DockerCompose from "./docker-compose.svx";
+    import Terminal from "./terminal.svx";
+
+    import CSharpInstall from "./csharp-install.svx";
+    import GoInstall from "./go-install.svx";
+    import HaskellInstall from "./haskell-install.svx";
+    import JavaInstall from "./java-install.svx";
+    import JavaScriptInstall from "./javascript-install.svx";
+    import PythonInstall from "./python-install.svx";
+</script>
+
+
+# {title}
+
+This page is about how to get started quickly with MinIO and docker compose. This setup is for development purposes only. For a production deployment, more factors need to be accounted for.
+
+## Install MinIO
+Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created file. 
+
+<CodeBlock>
+    <CodeBlockTab name="docker-compose.yml">
+        <DockerCompose />
+    </CodeBlockTab>
+</CodeBlock>
+
+Run `docker-compose up` in your terminal inside this folder to download and start the MinIO container.
+
+<CodeBlock>
+    <CodeBlockTab name="Terminal">
+        <Terminal />
+    </CodeBlockTab>
+</CodeBlock>
+
+## Get started with the MinIO Client
+Run the following command for your desired programming language to install the needed dependencies.
+
+<CodeBlock>
+    <CodeBlockTab name="C#">
+        <CSharpInstall />
+    </CodeBlockTab>
+    <CodeBlockTab name="Go">
+        <GoInstall />
+    </CodeBlockTab>
+    <CodeBlockTab name="Haskell">
+        <HaskellInstall />
+    </CodeBlockTab>
+    <CodeBlockTab name="Java">
+        <JavaInstall />
+    </CodeBlockTab>
+    <CodeBlockTab name="JavaScript">
+        <JavaScriptInstall />
+    </CodeBlockTab>
+    <CodeBlockTab name="Python">
+        <PythonInstall />
+    </CodeBlockTab>
+</CodeBlock>
+
+<ButtonList>
+    <ButtonListItem title="Continue at official MinIO documentation" href="https://min.io/docs/minio/linux/developers/minio-drivers.html" newTarget={true} />
+</ButtonList>
+
+## Get started with the Admin UI
+After installation, your MinIO admin ui is available under `host.docker.internal:9001`. With username `minioadmin` and password `minioadmin`.
+
+<ButtonList>
+    <ButtonListItem title="View your local Admin Dashboard" href="http://host.docker.internal:9001" newTarget={true} />
+</ButtonList>

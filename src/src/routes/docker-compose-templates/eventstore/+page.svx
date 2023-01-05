@@ -14,6 +14,7 @@ updated: "2023/01/04"
     import ButtonListItem from "src/components/button-list/ButtonListItem.svelte";
 
     import DockerCompose from "./docker-compose.svx";
+    import Terminal from "./terminal.svx";
 
     import CSharpInstall from "./csharp-install.svx";
     import GoInstall from "./go-install.svx";
@@ -33,6 +34,8 @@ updated: "2023/01/04"
 
 # {title}
 
+This page is about how to get started quickly with EventStoreDb and docker compose. This setup is for development purposes only. For a production deployment, more factors need to be accounted for.
+
 ## Install EventStoreDb
 Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created file. 
 
@@ -43,6 +46,12 @@ Create a `docker-compose.yml` file in an empty directory. Copy the following con
 </CodeBlock>
 
 Run `docker-compose up` in your terminal inside this folder to download and start the EventStoreDb container.
+
+<CodeBlock>
+    <CodeBlockTab name="Terminal">
+        <Terminal />
+    </CodeBlockTab>
+</CodeBlock>
 
 ## Get started with the gRPC Client
 First off, you need to install the gRPC client SDK inside of your project. To do this run the following commands:
