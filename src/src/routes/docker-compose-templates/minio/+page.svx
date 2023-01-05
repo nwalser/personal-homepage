@@ -2,7 +2,8 @@
 layout: dockercompose
 title: "How to deploy MinIO with Docker Compose"
 description: "This Docker Compose tutorial gets you started with MinIO quickly."
-created: "2023/01/05"
+author: Nathaniel Walser
+published: "2023/01/05"
 updated: "2023/01/05"
 ---
 

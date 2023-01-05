@@ -6,8 +6,13 @@
 	import { MetaTags } from 'svelte-meta-tags';
 	import TwoColumnLayout from './TwoColumnLayout.svelte';
 
-	export let title;
-	export let description;
+	export let title = "";
+	export let description = "";
+
+	export let author = "";
+	export let published = "";
+	export let updated = "";
+	export let authorLink = "/";
 </script>
 
 <MetaTags {title} titleTemplate="%s - Nathaniel Walser" {description} />
@@ -23,6 +28,7 @@
 	<span slot="body">
 		<Panel>
 			<Prose>
+				<p class="text-sm mb-1">Published {published} - Updated {updated} - Written by <a href={authorLink}>{author}</a></p>
 				<slot />
 			</Prose>
 		</Panel>

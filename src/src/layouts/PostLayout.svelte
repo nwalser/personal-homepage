@@ -2,11 +2,10 @@
 	import Panel from "src/components/Panel.svelte";
 	import Prose from "src/components/Prose.svelte";
 	import { MetaTags } from "svelte-meta-tags";
-	import MainLayout from "./MainLayout.svelte";
 	import TwoColumnLayout from "./TwoColumnLayout.svelte";
 
-	export let title;
-	export let description;
+	export let title = "";
+	export let description = "";
 </script>
 
 <MetaTags
