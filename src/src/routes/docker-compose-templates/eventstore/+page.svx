@@ -2,8 +2,9 @@
 layout: dockercompose
 title: "How to deploy EventStoreDB with Docker Compose"
 description: "Learn how to deploy EventStoreDB with Docker Compose."
-created: "2023/01/04"
-updated: "2023/01/04"
+author: Nathaniel Walser
+published: "2023/01/04"
+updated: "2023/01/05"
 ---
 
 <script>
