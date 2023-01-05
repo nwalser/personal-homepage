@@ -76,9 +76,9 @@
 				<p>For vision based processing tasks I use an OpenCV wrapper for c#.</p>
 				<h2>Secondary Technologies Used</h2>
 				<p>
-					I also use other technologies like Python, C/C++, SQL, REST APIs, Refit,
-					Polly, Autofac, Mapster and many more, but I would not consider them as part of my core
-					technology stack, as I am using them differently on project to project basis.
+					I also use other technologies like Python, C/C++, SQL, REST APIs, Refit, Polly, Autofac,
+					Mapster and many more, but I would not consider them as part of my core technology stack,
+					as I am using them differently on project to project basis.
 				</p>
 			</Prose>
 		</Panel>
@@ -140,5 +140,5 @@
 				</div>
 			</Prose>
 		</Panel>
-	</span></TwoColumnLayout
->
+	</span>
+</TwoColumnLayout>

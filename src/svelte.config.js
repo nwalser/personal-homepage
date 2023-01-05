@@ -14,6 +14,7 @@ const config = {
 		  extensions: ['.svx'],
 		  layout: {
 			post: 'src/layouts/PostLayout.svelte',
+			dockercompose: 'src/layouts/DockerComposeLayout.svelte',
 		  },
 		})
 	  ],

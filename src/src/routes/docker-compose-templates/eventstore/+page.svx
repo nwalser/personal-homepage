@@ -1,7 +1,7 @@
 ---
-layout: post
-title: "Deploy EventStoreDb with Docker Compose"
-description: "This Docker Compose Template gets you started with EventStoreDb quickly."
+layout: dockercompose
+title: "How to deploy EventStoreDB with Docker Compose"
+description: "Learn how to deploy EventStoreDB with Docker Compose."
 created: "2023/01/04"
 updated: "2023/01/04"
 ---
@@ -33,11 +33,15 @@ updated: "2023/01/04"
 </script>
 
 # {title}
+EventStoreDB is a database that is designed to store data as a series of events. It supports features like 
+**persistent subscriptions**, **catch up subscriptions** and **projections**, just to name a few. It can be used to 
+implement patterns like **event sourcing**.
 
-This page is about how to get started quickly with EventStoreDb and docker compose. This setup is for development purposes only. For a production deployment, more factors need to be accounted for.
+This setup is tailored for development purposes. For production it needs to be extended quite a bit.
 
-## Install EventStoreDb
-Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created file. 
+## Install EventStoreDB
+Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created 
+file. 
 
 <CodeBlock>
     <CodeBlockTab name="docker-compose.yml">
@@ -45,7 +49,7 @@ Create a `docker-compose.yml` file in an empty directory. Copy the following con
     </CodeBlockTab>
 </CodeBlock>
 
-Run `docker-compose up` in your terminal inside this folder to download and start the EventStoreDb container.
+Run `docker-compose up` in your terminal inside this folder to download and start the EventStoreDB container.
 
 <CodeBlock>
     <CodeBlockTab name="Terminal">
@@ -54,7 +58,7 @@ Run `docker-compose up` in your terminal inside this folder to download and star
 </CodeBlock>
 
 ## Get started with the gRPC Client
-First off, you need to install the gRPC client SDK inside of your project. To do this run the following commands:
+Install the gRPC client SDK inside of your project.
 
 <CodeBlock>
     <CodeBlockTab name="C#">
@@ -77,7 +81,7 @@ First off, you need to install the gRPC client SDK inside of your project. To do
     </CodeBlockTab>
 </CodeBlock>
 
-After the installation you can create and EventStoreDb client as following:
+After the installation you can create an EventStoreDB client like this:
 
 <CodeBlock>
     <CodeBlockTab name="C#">
@@ -100,13 +104,9 @@ After the installation you can create and EventStoreDb client as following:
     </CodeBlockTab>
 </CodeBlock>
 
-<ButtonList>
-    <ButtonListItem title="Continue at official EventStoreDb documentation" href="https://developers.eventstore.com/clients/grpc/#creating-an-event" newTarget={true} />
-</ButtonList>
+For more examples, like how to setup catch up subscriptions or append events to streams 
+check out the official [EventStoreDB docs](https://developers.eventstore.com/clients/grpc/#creating-an-event).
 
 ## Get started with the Admin UI
-After installation, your EventStoreDb admin ui is available under `host.docker.internal:2113`
-
-<ButtonList>
-    <ButtonListItem title="View your local Admin Dashboard" href="http://host.docker.internal:2113" newTarget={true} />
-</ButtonList>
+After installation your EventStoreDB admin ui is available under port **2113**.
+You can access it without username and password under [http://host.docker.internal:2113/](http://host.docker.internal:2113).

@@ -6,6 +6,8 @@
 	import GridListItem from 'src/components/grid-list/GridListItem.svelte';
 	import Prose from 'src/components/Prose.svelte';
 	import Hero from 'src/components/headers/Hero.svelte';
+	import VerticalList from 'src/components/vertical-list/VerticalList.svelte';
+	import VerticalListItem from 'src/components/vertical-list/VerticalListItem.svelte';
 </script>
 
 <MetaTags
@@ -35,25 +37,28 @@
 		</Panel>
 	</span>
 	<span slot="side">
-		<GridList>
-			<GridListItem
-				title="Linkedin"
-				subtitle="nathaniel-walser"
-				href="https://www.linkedin.com/in/nathaniel-walser/"
-				src="/logos/linkedin.svg"
-			/>
-			<GridListItem
-				title="Github"
-				subtitle="nwalser"
-				href="https://github.com/nwalser"
-				src="/logos/github.svg"
-			/>
-			<GridListItem
-				title="Stackoverflow"
-				subtitle="nathaniel-walser"
-				href="https://stackoverflow.com/users/10315352/nathaniel-walser"
-				src="/logos/stackoverflow.svg"
-			/>
-		</GridList>
+		<Panel>
+			<VerticalList>
+				<VerticalListItem
+					title="Linkedin"
+					subtitle="nathaniel-walser"
+					href="https://www.linkedin.com/in/nathaniel-walser/"
+					src="/logos/linkedin.svg"
+				/>
+				<VerticalListItem
+					title="Github"
+					subtitle="nwalser"
+					href="https://github.com/nwalser"
+					src="/logos/github.svg"
+				/>
+				<VerticalListItem
+					title="Stackoverflow"
+					subtitle="nathaniel-walser"
+					href="https://stackoverflow.com/users/10315352/nathaniel-walser"
+					src="/logos/stackoverflow.svg"
+					lastItem={true}
+				/>
+			</VerticalList>
+		</Panel>
 	</span>
 </TwoColumnLayout>

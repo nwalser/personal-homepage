@@ -3,8 +3,8 @@
 	import Panel from 'src/components/Panel.svelte';
 	import TwoColumnLayout from 'src/layouts/TwoColumnLayout.svelte';
 	import Prose from 'src/components/Prose.svelte';
-	import GridList from 'src/components/grid-list/GridList.svelte';
-	import GridListItem from 'src/components/grid-list/GridListItem.svelte';
+	import VerticalList from 'src/components/vertical-list/VerticalList.svelte';
+	import VerticalListItem from 'src/components/vertical-list/VerticalListItem.svelte';
 </script>
 
 <MetaTags
@@ -72,18 +72,21 @@
 		</Panel>
 	</span>
 	<span slot="side">
-		<GridList>
-			<GridListItem
-				title="Reddit"
-				subtitle="r/ProgrammerHumor"
-				href="https://www.reddit.com/r/ProgrammerHumor/"
-				src="/logos/reddit.svg"
-			/>
-			<GridListItem
-				title="DevTopics"
-				subtitle="Best Programming Jokes"
-				href="https://www.devtopics.com/best-programming-jokes/"
-			/>
-		</GridList>
+		<Panel>
+			<VerticalList>
+				<VerticalListItem
+					title="Reddit"
+					subtitle="r/ProgrammerHumor"
+					href="https://www.reddit.com/r/ProgrammerHumor/"
+					src="/logos/reddit.svg"
+				/>
+				<VerticalListItem
+					title="DevTopics"
+					subtitle="Best Programming Jokes"
+					href="https://www.devtopics.com/best-programming-jokes/"
+					lastItem={true}
+				/>
+			</VerticalList>
+		</Panel>
 	</span>
 </TwoColumnLayout>

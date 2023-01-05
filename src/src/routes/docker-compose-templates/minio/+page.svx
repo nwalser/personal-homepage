@@ -1,7 +1,7 @@
 ---
-layout: post
-title: "Deploy MinIO with Docker Compose"
-description: "This Docker Compose Template gets you started with MinIO quickly."
+layout: dockercompose
+title: "How to deploy MinIO with Docker Compose"
+description: "This Docker Compose tutorial gets you started with MinIO quickly."
 created: "2023/01/05"
 updated: "2023/01/05"
 ---
@@ -27,7 +27,10 @@ updated: "2023/01/05"
 
 # {title}
 
-This page is about how to get started quickly with MinIO and docker compose. This setup is for development purposes only. For a production deployment, more factors need to be accounted for.
+Minio is an S3 compatible object store. It is designed to store blob data. 
+It has features like **data retention policies**, **storage tiering**, **encryption** and **compression**, just to name a few.
+
+This setup is tailored for development purposes. For production it needs to be extended quite a bit.
 
 ## Install MinIO
 Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created file. 
@@ -70,13 +73,8 @@ Run the following command for your desired programming language to install the n
     </CodeBlockTab>
 </CodeBlock>
 
-<ButtonList>
-    <ButtonListItem title="Continue at official MinIO documentation" href="https://min.io/docs/minio/linux/developers/minio-drivers.html" newTarget={true} />
-</ButtonList>
+For further guidance on how to use the client you can continue at the official [MinIO docs](https://min.io/docs/minio/linux/developers/minio-drivers.html).
 
 ## Get started with the Admin UI
-After installation, your MinIO admin ui is available under `host.docker.internal:9001`. With username `minioadmin` and password `minioadmin`.
-
-<ButtonList>
-    <ButtonListItem title="View your local Admin Dashboard" href="http://host.docker.internal:9001" newTarget={true} />
-</ButtonList>
+After installation, your MinIO admin ui is available under port **9001**. 
+You can access it with username `minioadmin` and password `minioadmin` under [http://host.docker.internal:9001](http://host.docker.internal:9001).
