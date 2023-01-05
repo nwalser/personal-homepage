@@ -25,6 +25,17 @@
 			</Prose>
 		</Panel>
 
+		<!-- <div>
+			<label for="email" class="sr-only">Search Docker Compose Templates</label>
+			<input
+				type="search"
+				name="search"
+				id="search"
+				class="block w-full rounded-md text-2xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-5 py-6 mb-4"
+				placeholder="Search Docker Compose Templates"
+			/>
+		</div> -->
+
 		<PostList>
 			<PostListItem
 				title="How to deploy EventStoreDB with Docker Compose"
