@@ -1,0 +1,13 @@
+```powershell
+# For Maven
+<dependency>
+    <groupId>io.minio</groupId>
+    <artifactId>minio</artifactId>
+    <version>8.4.6</version>
+</dependency>
+
+# For Gradle
+dependencies {
+    implementation("io.minio:minio:8.4.6")
+}
+```

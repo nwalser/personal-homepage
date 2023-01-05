@@ -1,0 +1,6 @@
+```powershell
+# Add minio-hs to your project’s .cabal dependencies section.
+
+# For hpack
+# Add minio-hs to your package.yaml file.
+```

@@ -1,0 +1,7 @@
+```powershell
+# CLI
+dotnet add package Minio
+
+# Nuget PM
+Install-Package Minio
+```
