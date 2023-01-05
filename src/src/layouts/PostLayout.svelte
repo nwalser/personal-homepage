@@ -15,7 +15,7 @@
 	description={description}
 />
 
-<MainLayout>
+<TwoColumnLayout>
     <span slot="header">
 		<img
 			src="/hero/bits.svg"
@@ -30,6 +30,6 @@
 			</Prose>
 		</Panel>
 	</span>
-</MainLayout>
+</TwoColumnLayout>
 
 
