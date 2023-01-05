@@ -27,7 +27,7 @@ updated: "2023/01/05"
 
 # {title}
 
-This page is about how to get started quickly with MinIO with docker compose. This setup is for development purposes only. For a production deployment, more factors need to be accounted for.
+This page is about how to get started quickly with MinIO and docker compose. This setup is for development purposes only. For a production deployment, more factors need to be accounted for.
 
 ## Install MinIO
 Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created file. 
@@ -38,7 +38,7 @@ Create a `docker-compose.yml` file in an empty directory. Copy the following con
     </CodeBlockTab>
 </CodeBlock>
 
-Run `docker-compose up` in your terminal inside this folder to download and start the EventStoreDb container.
+Run `docker-compose up` in your terminal inside this folder to download and start the MinIO container.
 
 <CodeBlock>
     <CodeBlockTab name="Terminal">

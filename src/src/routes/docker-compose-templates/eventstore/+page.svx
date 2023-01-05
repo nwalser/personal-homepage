@@ -34,7 +34,7 @@ updated: "2023/01/04"
 
 # {title}
 
-This page is about how to get started quickly with EventStoreDb with docker compose. This setup is for development purposes only. For a production deployment, more factors need to be accounted for.
+This page is about how to get started quickly with EventStoreDb and docker compose. This setup is for development purposes only. For a production deployment, more factors need to be accounted for.
 
 ## Install EventStoreDb
 Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created file. 
