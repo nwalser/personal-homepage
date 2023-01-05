@@ -65,7 +65,7 @@ Run the following command for your desired programming language to install the n
     <CodeBlockTab name="JavaScript">
         <JavaScriptInstall />
     </CodeBlockTab>
-    <CodeBlockTab name="Pyhton">
+    <CodeBlockTab name="Python">
         <PythonInstall />
     </CodeBlockTab>
 </CodeBlock>
