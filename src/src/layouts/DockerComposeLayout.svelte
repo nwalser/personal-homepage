@@ -1,18 +1,29 @@
 <script>
 	import Panel from 'src/components/Panel.svelte';
 	import Prose from 'src/components/Prose.svelte';
-	import VerticalList from 'src/components/vertical-list/VerticalList.svelte';
-	import VerticalListItem from 'src/components/vertical-list/VerticalListItem.svelte';
 	import { MetaTags } from 'svelte-meta-tags';
 	import TwoColumnLayout from './TwoColumnLayout.svelte';
 
-	export let title = "";
-	export let description = "";
+	import { postsFiltered } from 'src/data/posts';
+	import { postSearch } from 'src/data/posts';
+	import PostList from 'src/components/post-list/PostList.svelte';
+	import { onMount } from 'svelte';
 
-	export let author = "";
-	export let published = "";
-	export let updated = "";
-	export let authorLink = "/";
+	export let data;
+	export let form;
+	export let layout;
+
+	export let title = '';
+	export let description = '';
+
+	export let author = '';
+	export let published = '';
+	export let updated = '';
+	export let authorLink = '/';
+
+	onMount(async () => {
+		$postSearch = "";
+	});
 </script>
 
 <MetaTags {title} titleTemplate="%s - Nathaniel Walser" {description} />
@@ -28,7 +39,9 @@
 	<span slot="body">
 		<Panel>
 			<Prose>
-				<p class="text-sm mb-1">Published {published} - Updated {updated} - Written by <a href={authorLink}>{author}</a></p>
+				<p class="text-sm mb-1">
+					Published {published} - Updated {updated} - Written by <a href={authorLink}>{author}</a>
+				</p>
 				<slot />
 			</Prose>
 		</Panel>
@@ -37,25 +50,28 @@
 		<Panel>
 			<Prose>
 				<h2>More Templates</h2>
-				<div class="not-prose">
-					<VerticalList>
-						<VerticalListItem
-							title="EventStoreDB"
-							subtitle="How to deploy EventStoreDB with docker compose"
-							src="/logos/eventstore-db.svg"
-							href="/docker-compose-templates/eventstore"
-						/>
-
-						<VerticalListItem
-							title="MinIO"
-							subtitle="How to deploy MinIO with docker compose"
-							src="/logos/minio.svg"
-							href="/docker-compose-templates/minio"
-							lastItem={true}
-						/>
-					</VerticalList>
-				</div>
 			</Prose>
 		</Panel>
+
+		<div>
+			<label for="email" class="sr-only">Search Docker Compose Templates</label>
+			<input
+				type="search"
+				name="search"
+				id="search"
+				class="block w-full rounded-md text-2xl text-gray-800 border-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-5 py-6 mb-5"
+				placeholder="Search Templates"
+				bind:value={$postSearch}
+			/>
+		</div>
+
+		<PostList
+			posts={postsFiltered}
+			maxPosts={4}
+			cols={1}
+			smCols={1}
+			aspect="aspect-[5/1]"
+			seeAllLink="/docker-compose-templates"
+		/>
 	</span>
 </TwoColumnLayout>

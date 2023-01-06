@@ -5,8 +5,13 @@
 	import Hero from 'src/components/headers/Hero.svelte';
 	import MainLayout from 'src/layouts/MainLayout.svelte';
 	import PostList from 'src/components/post-list/PostList.svelte';
-	import { writable } from 'svelte/store';
-	import { posts } from './posts';
+	import { postsFiltered } from 'src/data/posts';
+	import { postSearch } from 'src/data/posts';
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		$postSearch = "";
+	});
 </script>
 
 <MetaTags
@@ -26,18 +31,19 @@
 			</Prose>
 		</Panel>
 
-		<!-- <div>
+		<div>
 			<label for="email" class="sr-only">Search Docker Compose Templates</label>
 			<input
 				type="search"
 				name="search"
 				id="search"
-				class="block w-full rounded-md text-2xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-5 py-6 mb-4"
-				placeholder="Search Docker Compose Templates"
+				class="block w-full rounded-md text-2xl text-gray-800 border-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-5 py-6 mb-5"
+				placeholder="Search Templates"
+				bind:value={$postSearch}
 			/>
-		</div> -->
+		</div>
 
-		<PostList posts={writable(posts)} />
+		<PostList posts={postsFiltered}/>
 
 	</span>
 </MainLayout>
