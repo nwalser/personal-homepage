@@ -5,7 +5,13 @@
 	import Hero from 'src/components/headers/Hero.svelte';
 	import MainLayout from 'src/layouts/MainLayout.svelte';
 	import PostList from 'src/components/post-list/PostList.svelte';
-	import PostListItem from 'src/components/post-list/PostListItem.svelte';
+	import { postsFiltered } from 'src/data/posts';
+	import { postSearch } from 'src/data/posts';
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		$postSearch = "";
+	});
 </script>
 
 <MetaTags
@@ -25,21 +31,19 @@
 			</Prose>
 		</Panel>
 
-		<PostList>
-			<PostListItem
-				title="How to deploy EventStoreDB with Docker Compose"
-				href="/docker-compose-templates/eventstore"
-				src="/docker-compose-templates/eventstore/header.svg"
-				alt="eventstore db logo"
-				color="bg-green-100"
+		<div>
+			<label for="email" class="sr-only">Search Docker Compose Templates</label>
+			<input
+				type="search"
+				name="search"
+				id="search"
+				class="block w-full rounded-md text-2xl text-gray-800 border-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-5 py-6 mb-5"
+				placeholder="Search Templates"
+				bind:value={$postSearch}
 			/>
-			<PostListItem
-				title="How to deploy MinIO with Docker Compose"
-				href="/docker-compose-templates/minio"
-				src="/docker-compose-templates/minio/header.svg"
-				alt="eventstore db logo"
-				color="bg-red-100"
-			/>
-		</PostList>
+		</div>
+
+		<PostList posts={postsFiltered}/>
+
 	</span>
 </MainLayout>
