@@ -5,7 +5,8 @@
 	import Hero from 'src/components/headers/Hero.svelte';
 	import MainLayout from 'src/layouts/MainLayout.svelte';
 	import PostList from 'src/components/post-list/PostList.svelte';
-	import PostListItem from 'src/components/post-list/PostListItem.svelte';
+	import { writable } from 'svelte/store';
+	import { posts } from './posts';
 </script>
 
 <MetaTags
@@ -36,21 +37,7 @@
 			/>
 		</div> -->
 
-		<PostList>
-			<PostListItem
-				title="How to deploy EventStoreDB with Docker Compose"
-				href="/docker-compose-templates/eventstore"
-				src="/docker-compose-templates/eventstore/header.svg"
-				alt="eventstore db logo"
-				color="bg-green-100"
-			/>
-			<PostListItem
-				title="How to deploy MinIO with Docker Compose"
-				href="/docker-compose-templates/minio"
-				src="/docker-compose-templates/minio/header.svg"
-				alt="eventstore db logo"
-				color="bg-red-100"
-			/>
-		</PostList>
+		<PostList posts={writable(posts)} />
+
 	</span>
 </MainLayout>
