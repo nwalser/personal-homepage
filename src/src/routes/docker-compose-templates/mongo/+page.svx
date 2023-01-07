@@ -40,7 +40,7 @@ Create a `docker-compose.yml` file in an empty directory. Copy the following con
     </CodeBlockTab>
 </CodeBlock>
 
-Run `docker-compose up` in your terminal inside this folder to download and start the EventStoreDB container.
+Run `docker-compose up` in your terminal inside this folder to download and start the MongoDB container.
 
 <CodeBlock>
     <CodeBlockTab name="Terminal">
