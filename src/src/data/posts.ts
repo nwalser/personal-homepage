@@ -4,9 +4,9 @@ import type { Post } from './post';
 export const posts: Post[] = [
     {
         title: "How to deploy EventStoreDB with Docker Compose",
-        subtitle: "How to deploy EventStoreDB with docker compose",
+        subtitle: "",
         published: "2023/01/04",
-        updated: "2023/01/05",
+        updated: "2023/01/07",
         primaryColor: "bg-green-100",
         imageSrc: "/docker-compose-templates/eventstore/header.svg",
         imageAlt: "eventstore db logo",
@@ -14,13 +14,23 @@ export const posts: Post[] = [
     },
     {
         title: "How to deploy MinIO with Docker Compose",
-        subtitle: "How to deploy MinIO with docker compose",
+        subtitle: "",
         published: "2023/01/05",
-        updated: "2023/01/05",
+        updated: "2023/01/07",
         primaryColor: "bg-red-100",
         imageSrc: "/docker-compose-templates/minio/header.svg",
         imageAlt: "minio logo",
         link: "/docker-compose-templates/minio",
+    },
+    {
+        title: "How to deploy MongoDB with Docker Compose",
+        subtitle: "",
+        published: "2023/01/07",
+        updated: "2023/01/07",
+        primaryColor: "bg-green-100",
+        imageSrc: "/docker-compose-templates/mongo/header.svg",
+        imageAlt: "minio logo",
+        link: "/docker-compose-templates/mongo",
     }
 ]
 
@@ -41,4 +51,3 @@ function postFilter(posts: Post[], search: string) {
             || regex.test(post.subtitle)
     })
 }
-

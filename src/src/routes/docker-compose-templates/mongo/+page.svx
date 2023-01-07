@@ -1,0 +1,62 @@
+---
+layout: dockercompose
+title: "How to deploy MongoDB with Docker Compose"
+description: "Learn how to deploy MongoDB with Docker Compose."
+author: Nathaniel Walser
+published: "2023/01/07"
+updated: "2023/01/07"
+---
+
+<script>
+    import CodeBlock from "src/components/code-block/CodeBlock.svelte";
+    import CodeBlockTab from "src/components/code-block/CodeBlockTab.svelte";
+
+    import DockerComposeBasic from "./basic-docker-compose.svx";
+    import DockerComposeExpress from "./express-docker-compose.svx";
+
+    import Terminal from "./terminal.svx";
+</script>
+
+# {title}
+MongoDB is a nosql document database. It provides features like **atomic transactions**, **sharding**, **replication** and **storage tiering**, just to name a few.
+
+This setup is tailored for development purposes only. For production it needs to be extended quite a bit.
+
+## Install MongoDB
+There are two common setup options available: 
+- MongoDB with MongoDB Express. (Express is a Webbased admin ui)
+- MongoDB with MongoDB Compass. (Compass is a Desktop admin ui)
+
+Personally I prefer the later one. MongoDB Compass has many features more and its easier to work with in development. 
+
+Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created file. 
+
+<CodeBlock>
+    <CodeBlockTab name="Basic: docker-compose.yml">
+        <DockerComposeBasic />
+    </CodeBlockTab>
+    <CodeBlockTab name="Express: docker-compose.yml">
+        <DockerComposeExpress />
+    </CodeBlockTab>
+</CodeBlock>
+
+Run `docker-compose up` in your terminal inside this folder to download and start the EventStoreDB container.
+
+<CodeBlock>
+    <CodeBlockTab name="Terminal">
+        <Terminal />
+    </CodeBlockTab>
+</CodeBlock>
+
+## Get started with the MongoDB Driver
+Installation instructions for your [MongoDB Driver of choice can be found here](https://www.mongodb.com/docs/drivers/). After successfull installation you can connect to MongoDB with `mongodb://host.docker.internal:27017` as connection string.
+
+## Get started with MongoDB Compass
+If you've choosen the MongoDB Compass option, you can download and install [MongoDB Compass here](https://www.mongodb.com/try/download/compass).
+
+After installation you will be able to connect to MongoDB with `mongodb://host.docker.internal:27017/` as connection string. 
+You can leave the other options as preconfigured.
+
+## Get started with MongoDB Express
+If you've choosen the MongoDB Express option, MongoDB Express is available under port **8081**.
+You can access it without any credentials under [http://host.docker.internal:8081/](http://host.docker.internal:8081/).
