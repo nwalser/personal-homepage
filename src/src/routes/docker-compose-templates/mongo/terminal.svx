@@ -1,0 +1,4 @@
+```powershell
+# CLI
+docker-compose up
+```

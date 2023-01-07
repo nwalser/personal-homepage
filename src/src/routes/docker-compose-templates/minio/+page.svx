@@ -4,7 +4,7 @@ title: "How to deploy MinIO with Docker Compose"
 description: "This Docker Compose tutorial gets you started with MinIO quickly."
 author: Nathaniel Walser
 published: "2023/01/05"
-updated: "2023/01/05"
+updated: "2023/01/07"
 ---
 
 <script>
@@ -14,7 +14,7 @@ updated: "2023/01/05"
     import ButtonList from "src/components/button-list/ButtonList.svelte";
     import ButtonListItem from "src/components/button-list/ButtonListItem.svelte";
 
-    import DockerCompose from "./docker-compose.svx";
+    import DockerComposeBasic from "./basic-docker-compose.svx";
     import Terminal from "./terminal.svx";
 
     import CSharpInstall from "./csharp-install.svx";
@@ -31,14 +31,14 @@ updated: "2023/01/05"
 Minio is an S3 compatible object store. It is designed to store blob data. 
 It has features like **data retention policies**, **storage tiering**, **encryption** and **compression**, just to name a few.
 
-This setup is tailored for development purposes. For production it needs to be extended quite a bit.
+This setup is tailored for development purposes only. For production it needs to be extended quite a bit.
 
 ## Install MinIO
 Create a `docker-compose.yml` file in an empty directory. Copy the following content into the newly created file. 
 
 <CodeBlock>
-    <CodeBlockTab name="docker-compose.yml">
-        <DockerCompose />
+    <CodeBlockTab name="Basic: docker-compose.yml">
+        <DockerComposeBasic />
     </CodeBlockTab>
 </CodeBlock>
 
