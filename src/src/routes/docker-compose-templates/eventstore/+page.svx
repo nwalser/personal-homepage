@@ -1,4 +1,5 @@
 ---
+id: 1
 layout: dockercompose
 title: "How to deploy EventStoreDB with Docker Compose"
 description: "Learn how to deploy EventStoreDB with Docker Compose."

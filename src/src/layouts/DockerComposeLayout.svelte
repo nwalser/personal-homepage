@@ -8,7 +8,9 @@
 	import { postSearch } from 'src/data/posts';
 	import PostList from 'src/components/post-list/PostList.svelte';
 	import { onMount } from 'svelte';
+    import { page } from '$app/stores';
 
+	export let id;
 	export let data;
 	export let form;
 	export let layout;
@@ -43,6 +45,14 @@
 					Published {published} - Updated {updated} - Written by <a href={authorLink}>{author}</a>
 				</p>
 				<slot />
+				<div class="w-full h-[2px] bg-gray-300" />
+				<script src="https://utteranc.es/client.js"
+					repo="nwalser/personal-homepage-utterances"
+					issue-term="pathname"
+					theme="github-light"
+					crossorigin="anonymous"
+					async>
+				</script>
 			</Prose>
 		</Panel>
 	</span>
