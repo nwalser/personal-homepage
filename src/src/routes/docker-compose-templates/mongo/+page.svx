@@ -1,4 +1,5 @@
 ---
+id: 3
 layout: dockercompose
 title: "How to deploy MongoDB with Docker Compose"
 description: "Learn how to deploy MongoDB with Docker Compose."

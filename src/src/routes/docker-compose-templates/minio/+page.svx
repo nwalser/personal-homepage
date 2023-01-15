@@ -1,4 +1,5 @@
 ---
+id: 2
 layout: dockercompose
 title: "How to deploy MinIO with Docker Compose"
 description: "This Docker Compose tutorial gets you started with MinIO quickly."
