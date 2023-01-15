@@ -54,6 +54,11 @@
 	<span slot="body">
 		<Panel>
 			<Prose>
+				<img
+				src="/profile/profile-picture.jpeg"
+				alt="portrait of nathaniel walser"
+				class="relative w-full object-cover sm:w-auto rounded-xl float-left mr-6 mb-6 h-60 xl:h-96 xl:-left-24 xl:-top-28 xl:-mr-16 xl:-mb-28"
+			/>
 				<h1>Hi! I am Nathaniel Walser.</h1>
 				<p>
 					I am a 21 year old <span class="font-bold">fullstack developer</span> based in Saint Gallen,
