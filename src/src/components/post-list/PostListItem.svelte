@@ -10,6 +10,9 @@
 		<img src={post.imageSrc} alt={post.imageAlt} class="{aspect} object-fit object-center" />
 	</div>
 	<div class="flex flex-1 flex-col space-y-2 p-4">
+		<p class="text-gray-900 text-sm -mb-2">
+			Updated {post.updated}
+		</p>
 		<h2 class="font-bold text-gray-900 text-2xl">
 			<a href={post.link}>
 				<span aria-hidden="true" class="absolute inset-0" />
