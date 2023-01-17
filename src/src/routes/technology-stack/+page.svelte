@@ -18,14 +18,14 @@
 		let years: number = Math.trunc(totalMonths / 12);
 
 		if (years == 1) {
-			return `${years} years of Experience`;
+			return `${years} years of experience`;
 		}
 
 		if (years > 1) {
-			return `${years} years of Experience`;
+			return `${years} years of experience`;
 		}
 
-		return 'No Experience';
+		return 'No experience';
 	}
 </script>
 
@@ -61,10 +61,10 @@
 				</p>
 				<h3>EventStoreDb / MongoDb</h3>
 				<p>
-					About two years ago I shifted my focus mainly on learning design patterns for larger
-					applications with complex business domains. Since then, I use technologies like
+					About two years ago my focus shifted mainly on learning design patterns for larger
+					applications with complex business domains. Since then, technologies like
 					<span class="font-bold">EventStoreDb</span> for event sourcing and
-					<span class="font-bold">MongoDb</span> as a query store.
+					<span class="font-bold">MongoDb</span> as a query store accompany me almost every day.
 				</p>
 				<h3>Docker / Portainer</h3>
 				<p>

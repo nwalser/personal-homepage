@@ -6,6 +6,9 @@
 	import Timeline from 'src/components/timeline/Timeline.svelte';
 	import TimelineSubheading from 'src/components/timeline/TimelineSubheading.svelte';
 	import Prose from 'src/components/Prose.svelte';
+	import VerticalList from 'src/components/vertical-list/VerticalList.svelte';
+	import VerticalListItem from 'src/components/vertical-list/VerticalListItem.svelte';
+	import VerticalListButton from 'src/components/vertical-list/VerticalListButton.svelte';
 
 	function getMonthYearDifferenceString(startDate: Date, endDate: Date) {
 		let totalMonths =
@@ -34,13 +37,32 @@
 
 		return str;
 	}
+
+	function getExperienceText(startDate: Date, endDate: Date) {
+		let totalMonths =
+			endDate.getMonth() -
+			startDate.getMonth() +
+			12 * (endDate.getFullYear() - startDate.getFullYear());
+
+		let years: number = Math.trunc(totalMonths / 12);
+
+		if (years == 1) {
+			return `${years} years of experience`;
+		}
+
+		if (years > 1) {
+			return `${years} years of experience`;
+		}
+
+		return 'No Experience';
+	}
 </script>
 
 <MetaTags
 	title="About Me"
 	titleTemplate="%s - Nathaniel Walser"
-	description="I am a 21 year old fullstack developer based in Saint Gallen, Switzerland. I have worked on a number of projects, 
-					including creating software algorithms with neuronal for surface inspection and quality assurance."
+	description="I am a 21 year old fullstack developer based in St. Gallen, Switzerland. I have worked on a number of projects, 
+					including creating software algorithms with neuronal networks for surface inspection and quality assurance."
 />
 
 <TwoColumnLayout pb={110}>
@@ -55,10 +77,10 @@
 		<Panel>
 			<Prose>
 				<img
-				src="/profile/profile-picture.jpeg"
-				alt="portrait of nathaniel walser"
-				class="relative w-full object-cover sm:w-auto rounded-xl float-left mr-6 mb-6 h-60 xl:h-96 xl:-left-24 xl:-top-28 xl:-mr-16 xl:-mb-28"
-			/>
+					src="/profile/profile-picture.jpeg"
+					alt="portrait of nathaniel walser"
+					class="relative w-full object-cover sm:w-auto rounded-xl float-left mr-6 mb-6 h-60 xl:h-96 xl:-left-24 xl:-top-28 xl:-mr-16 xl:-mb-28"
+				/>
 				<h1>Hi! I am Nathaniel Walser.</h1>
 				<p>
 					I am a 21 year old <span class="font-bold">fullstack developer</span> based in Saint Gallen,
@@ -73,9 +95,9 @@
 					managing large datasets and many areas more.
 				</p>
 				<p>
-					In addition to my work experience, I am also studying systems engineering at the <span
-						class="font-bold">Zurich University of Applied Sciences</span
-					> in Winterthur. Currently I am in the second semester.
+					In addition to this position at esp-engineering, I am also able to study systems
+					engineering at the <span class="font-bold">Zurich University of Applied Sciences</span> in
+					Winterthur, currently in the second semester.
 				</p>
 				<p>
 					In my free time I fly quadrocopters, learn new technologies and develop plugins for a
@@ -89,12 +111,12 @@
 					<a
 						href="/technology-stack"
 						class="inline-flex items-center rounded-md border border-transparent bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 mr-2"
-						>Tech Stack</a
+						>💻 Technology Stack</a
 					>
 					<a
 						href="/get-in-touch"
 						class="inline-flex items-center rounded-md border border-transparent bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-						>Get in Touch</a
+						>👋 Get in Touch</a
 					>
 				</div>
 			</Prose>
@@ -198,6 +220,32 @@
 							</span>
 						</TimelineSubheading>
 					</Timeline>
+				</div>
+			</Prose>
+		</Panel>
+
+		<Panel>
+			<Prose>
+				<h2>Core Experience</h2>
+				<div class="not-prose">
+					<VerticalList>
+						<VerticalListItem
+							title="C#"
+							subtitle={getExperienceText(new Date('2016-01-01'), new Date())}
+							src="/logos/csharp.svg"
+						/>
+						<VerticalListItem
+							title="ASP.NET Core"
+							subtitle={getExperienceText(new Date('2017-01-01'), new Date())}
+							src="/logos/dotnet-core.svg"
+						/>
+						<VerticalListItem
+							title="Blazor"
+							subtitle={getExperienceText(new Date('2019-01-01'), new Date())}
+							src="/logos/blazor.svg"
+						/>
+						<VerticalListButton href="/technology-stack">💻 Technology Stack</VerticalListButton>
+					</VerticalList>
 				</div>
 			</Prose>
 		</Panel>
