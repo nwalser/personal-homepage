@@ -20,7 +20,9 @@
 			dataLayer.push(arguments);
 		}
 
+		import { PUBLIC_GTAG } from '$env/static/public'
+
 		gtag('js', new Date());
-		gtag('config', {PUBLIC_GTAG});
+		gtag('config', PUBLIC_GTAG);
 	</script>
 </svelte:head>
