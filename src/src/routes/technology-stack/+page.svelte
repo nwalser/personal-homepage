@@ -140,5 +140,20 @@
 				</div>
 			</Prose>
 		</Panel>
+
+		<Panel>
+			<Prose>
+				<blockquote>
+					Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the
+					science. <br />
+					-
+					<a
+						href="https://www.devtopics.com/best-programming-jokes/"
+						target="_blank"
+						rel="noreferrer">DevTopics</a
+					>
+				</blockquote>
+			</Prose>
+		</Panel>
 	</span>
 </TwoColumnLayout>

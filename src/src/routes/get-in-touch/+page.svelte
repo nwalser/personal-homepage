@@ -35,6 +35,22 @@
 				</p>
 			</Prose>
 		</Panel>
+
+		<Panel>
+			<Prose>
+				<blockquote>
+					ISDN: It Still Does Nothing <br />
+					MIPS: Meaningless Indication of Processor Speed <br />
+					PnP: Plug and Pray <br />
+					-
+					<a
+						href="https://www.devtopics.com/best-programming-jokes/"
+						target="_blank"
+						rel="noreferrer">DevTopics</a
+					>
+				</blockquote>
+			</Prose>
+		</Panel>
 	</span>
 	<span slot="side">
 		<Panel>
