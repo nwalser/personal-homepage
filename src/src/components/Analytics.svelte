@@ -21,6 +21,6 @@
 		}
 
 		gtag('js', new Date());
-		gtag('config', PUBLIC_GTAG);
+		gtag('config', {PUBLIC_GTAG});
 	</script>
 </svelte:head>
