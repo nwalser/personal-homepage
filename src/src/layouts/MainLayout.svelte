@@ -20,7 +20,7 @@
 	<meta name="theme-color" content="#1f2937"/>
 </svelte:head>
 
-<div class="min-h-screen flex flex-col">
+<div class="min-h-screen flex flex-col overflow-hidden">
 	<div class="bg-gray-800 relative z-0 overflow-hidden" style="padding-bottom: {pb / 4}rem;">
 		<nav>
 			<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
