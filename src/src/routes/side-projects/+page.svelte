@@ -49,7 +49,7 @@
 						projects. It is built with SvelteKit and FlowbiteUI.
 					</p>
 				</div>
-				<a class="z-10 bottom-2 right-2 absolute" href="https://github.com/nwalser/docker-stack">
+				<a class="z-10 bottom-2 right-2 absolute" target="_blank" href="https://github.com/nwalser/docker-stack">
 					<img src="/logos/github.svg" alt="" class="w-10" />
 				</a>
 			</div>
@@ -75,7 +75,7 @@
 						with SvelteKit and Tailwind CSS.
 					</p>
 				</div>
-				<a class="z-10 bottom-2 right-2 absolute" href="https://github.com/nwalser/3a-comparator">
+				<a class="z-10 bottom-2 right-2 absolute" target="_blank" href="https://github.com/nwalser/3a-comparator">
 					<img src="/logos/github.svg" alt="" class="w-10" />
 				</a>
 			</div>
@@ -100,7 +100,7 @@
 						with SvelteKit and Tailwind CSS.
 					</p>
 				</div>
-				<a class="z-10 bottom-2 right-2 absolute" href="https://github.com/nwalser/personal-homepage">
+				<a class="z-10 bottom-2 right-2 absolute" target="_blank" href="https://github.com/nwalser/personal-homepage">
 					<img src="/logos/github.svg" alt="" class="w-10" />
 				</a>
 			</div>
