@@ -196,9 +196,6 @@
 	});
 </script>
 
-{@html '<script src="https://d3js.org/d3.v4.min.js"></script>'}
-
-{@html '<script src="https://zalando.github.io/tech-radar/release/radar-0.7.js"></script>'}
 <div
 	style="backgroundColor: 'lightpink',
     resize: 'horizontal',
