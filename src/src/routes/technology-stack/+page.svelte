@@ -8,6 +8,7 @@
 	import VerticalListItem from 'src/components/vertical-list/VerticalListItem.svelte';
 	import VerticalListDivider from 'src/components/vertical-list/VerticalListDivider.svelte';
 	import VerticalListButton from 'src/components/vertical-list/VerticalListButton.svelte';
+	import TechRadar from './TechRadar.svelte';
 
 	function getExperienceText(startDate: Date, endDate: Date) {
 		let totalMonths =
@@ -44,7 +45,7 @@
 	<span slot="body">
 		<Panel>
 			<Prose>
-				<h1>Nathaniel's Technology Stack</h1>
+				<h1>Technology Stack</h1>
 				<p>
 					In my 10+ years of IT experiences I had the opportunity to learn many awesome
 					technologies. Over the years a go-to technology stack developed, with which I was able to
@@ -156,4 +157,15 @@
 			</Prose>
 		</Panel>
 	</span>
+
+
+	<span slot="bottom">
+		<Panel>
+			<Prose>
+				<h2>Technology Radar</h2>
+				<TechRadar />
+			</Prose>
+		</Panel>
+	</span>
+
 </TwoColumnLayout>
