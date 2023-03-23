@@ -5,16 +5,13 @@
 
 	export let posts: Readable<PostListEntry[]>;
 
-	export let cols: number = 3;
-	export let smCols: number = 1;
-
 	export let maxPosts: number = 1000;
 	export let aspect: string = 'aspect-[8/3]';
 
 	export let seeAllLink: string = '';
 </script>
 
-<div class="grid grid-cols-{cols} gap-y-4 sm:grid-cols-{smCols} gap-x-4 mb-5">
+<div class="grid grid-cols-1 gap-y-4 md:grid-cols-3 gap-x-4 mb-5">
 	{#each $posts.slice(0, maxPosts) as post}
 		<PostListItem {post} {aspect} />
 	{/each}
