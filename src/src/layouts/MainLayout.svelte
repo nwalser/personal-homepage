@@ -39,6 +39,7 @@
 							<div class="hidden md:block">
 								<div class="ml-10 flex items-baseline space-x-4">
 									<MenuItem href="/technology-stack">💻 Technology Stack</MenuItem>
+									<MenuItem href="/side-projects">☕ Side Projects</MenuItem>
 									<MenuItem href="/docker-compose-templates">📄 Docker Compose Templates</MenuItem>
 								</div>
 							</div>
@@ -98,8 +99,8 @@
 				<div class="border-b border-gray-700 md:hidden" id="mobile-menu">
 					<div class="space-y-1 px-2 py-3 sm:px-3">
 						<MenuItem href="/technology-stack" mobile={true}>💻 Technology Stack</MenuItem>
+						<MenuItem href="/side-projects" mobile={true}>☕ Side Projects</MenuItem>
 						<MenuItem href="/docker-compose-templates" mobile={true}>📄 Docker Compose Templates</MenuItem>
-
 						<a
 							href="/get-in-touch"
 							class="inline-flex items-center w-full rounded-md border border-transparent bg-indigo-600 px-3 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
