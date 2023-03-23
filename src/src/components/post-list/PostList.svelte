@@ -23,7 +23,9 @@
 		<PostListItem
 			post={{
 				title: 'Nothing found',
-				subtitle: ''
+				subtitle: '',
+				updated: '',
+				published: ''
 			}}
 			{aspect}
 		/>

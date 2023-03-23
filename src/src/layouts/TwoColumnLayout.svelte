@@ -13,6 +13,9 @@
 			<div class="col-span-3 md:col-span-1">
 				<slot name="side" />
 			</div>
+			<div class="col-span-3">
+				<slot name="bottom" />
+			</div>
 		</div>
 	</span>
 </MainLayout>
