@@ -17,12 +17,15 @@
 	]);
 
 	let newMessage: string = '';
+	let writing = writable<boolean>(false);
 
 	const onKeyPress = (e) => {
 		if (e.charCode === 13) chat();
 	};
 
+
 	async function chat() {
+		$writing = true;
 		$messages = [...$messages, { role: 'user', content: newMessage }];
 		newMessage = '';
 
@@ -35,6 +38,7 @@
 
 		console.log(chatMessage);
 
+		$writing = false;
 		$messages = [...$messages, { role: 'assistant', content: chatMessage }];
 	}
 </script>
@@ -46,18 +50,25 @@
 		<div class="flex flex-col my-4">
 			{#each $messages as message}
 				{#if message.role == 'assistant'}
-					<p class="my-3 pr-28 text-justify">
-						<span class="font-bold">Buddy:</span>
+					<p class="relative my-4 max-w-[90%] mr-auto p-4 text-justify bg-slate-100 rounded-lg">
+						<span class="font-bold absolute -top-5 left-3 bg-slate-200 p-2 py-0 rounded-md">Buddy</span>
 						{message.content}
 					</p>
 				{/if}
 				{#if message.role == 'user'}
-					<p class="my-3 pl-28 ml-auto text-justify">
-						<span class="font-bold">You:</span>
+					<p class="relative my-4 ml-auto p-4 max-w-[90%] text-justify bg-slate-100 rounded-lg">
+						<span class="font-bold absolute -top-5 right-3 bg-slate-200 p-2 py-0 rounded-md">You</span>
 						{message.content}
 					</p>
 				{/if}
 			{/each}
+
+			{#if $writing == true}
+				<p class="relative my-4 max-w-[90%] p-4 mr-auto text-justify bg-slate-100 rounded-lg">
+					<span class="font-bold absolute -top-5 left-3 bg-slate-200 p-2 py-0 rounded-md">Buddy</span>
+					writing...
+				</p>
+			{/if}
 		</div>
 
 		<div class="not-prose justify-end flex">
