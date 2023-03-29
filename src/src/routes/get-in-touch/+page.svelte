@@ -8,6 +8,7 @@
 	import Hero from 'src/components/headers/Hero.svelte';
 	import VerticalList from 'src/components/vertical-list/VerticalList.svelte';
 	import VerticalListItem from 'src/components/vertical-list/VerticalListItem.svelte';
+	import Chat from 'src/components/Chat.svelte';
 </script>
 
 <MetaTags
@@ -49,6 +50,12 @@
 						rel="noreferrer">DevTopics</a
 					>
 				</blockquote>
+			</Prose>
+		</Panel>
+
+		<Panel>
+			<Prose>
+				<Chat />
 			</Prose>
 		</Panel>
 	</span>

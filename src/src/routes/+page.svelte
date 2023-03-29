@@ -9,6 +9,7 @@
 	import VerticalList from 'src/components/vertical-list/VerticalList.svelte';
 	import VerticalListItem from 'src/components/vertical-list/VerticalListItem.svelte';
 	import VerticalListButton from 'src/components/vertical-list/VerticalListButton.svelte';
+	import Chat from 'src/components/chat/Chat.svelte';
 
 	function getMonthYearDifferenceString(startDate: Date, endDate: Date) {
 		let totalMonths =
@@ -121,6 +122,8 @@
 				</div>
 			</Prose>
 		</Panel>
+
+		<Chat />
 
 		<Panel>
 			<Prose>
