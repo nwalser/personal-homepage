@@ -28,7 +28,7 @@
 	});
 </script>
 
-<MetaTags {title} titleTemplate="%s - Nathaniel Walser" {description}  />
+<MetaTags {title} titleTemplate="%s - Nathaniel Walser" {description} />
 
 <TwoColumnLayout>
 	<span slot="header">
@@ -78,8 +78,7 @@
 		<PostList
 			posts={postsFiltered}
 			maxPosts={4}
-			cols={1}
-			smCols={1}
+			colsClasses="grid-cols-1"
 			aspect="aspect-[5/1]"
 			seeAllLink="/docker-compose-templates"
 		/>

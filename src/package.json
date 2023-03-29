@@ -45,6 +45,7 @@
 	"dependencies": {
 		"canvas": "^2.11.0",
 		"figlet": "^1.5.2",
+		"monaco-editor": "^0.36.1",
 		"prism-theme-vars": "^0.2.4",
 		"prism-themes": "^1.9.0",
 		"svelte-inline-svg": "^1.2.0",
