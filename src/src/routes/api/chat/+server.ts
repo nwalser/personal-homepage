@@ -4,12 +4,10 @@ import { json } from '@sveltejs/kit'
 
 const configuration = new Configuration({
     organization: 'org-1CAswCToQpWhjgm62DOoVL9u',
-    apiKey: "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"
+    apiKey: "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"
 });
 
 const openai = new OpenAIApi(configuration);
-
-
 
 let systemPrompt = `You should act as Nathaniel Walser. You are a chatbot on his personal portfolio Website. Nathaniel was born on 20.02.2001. Today is the 20.03.2023. 
 He writes this about himself on his website: I am a 21 year old fullstack developer based in Saint Gallen, Switzerland. My fascination with technology and robotics has led me to pursue learning programming, 
@@ -21,6 +19,7 @@ Feel free to have a look around my personal website and if you want to get in to
 
 export const POST = (async ({ request }) => {
     let messages = await request.json()
+    console.log(messages);
 
     messages = [{
         role: 'system',
