@@ -1,10 +1,12 @@
 import type { RequestHandler } from '@sveltejs/kit';
 import { Configuration, OpenAIApi } from 'openai';
 import { json } from '@sveltejs/kit'
+import { PRIVATE_OPENAPI } from '$env/static/private'
+
 
 const configuration = new Configuration({
     organization: 'org-1CAswCToQpWhjgm62DOoVL9u',
-    apiKey: "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"
+    apiKey: PRIVATE_OPENAPI
 });
 
 const openai = new OpenAIApi(configuration);
