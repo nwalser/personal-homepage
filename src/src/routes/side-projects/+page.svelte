@@ -29,57 +29,6 @@
 
 		<div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 gap-x-4 mb-5">
 			<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white">
-				<div class="bg-[#E0E0D1]">
-					<img
-						src="/side-projects/docker-stack.png"
-						alt=""
-						class="aspect-[8/3] object-contain object-center"
-					/>
-				</div>
-				<div class="flex flex-1 flex-col space-y-2 p-4 mb-5">
-					<p class="text-gray-900 text-sm -mb-2">Actively Maintained</p>
-					<h2 class="font-bold text-gray-900 text-2xl">
-						<a href="https://docker-stack.com" target="_blank">
-							<span aria-hidden="true" class="absolute inset-0" />
-							docker-stack.com
-						</a>
-					</h2>
-					<p class="text-sm text-gray-500">
-						Docker Stack is a website with prebuilt docker stacks, ready to download and to use in
-						projects. It is built with SvelteKit and FlowbiteUI.
-					</p>
-				</div>
-				<a class="z-10 bottom-2 right-2 absolute" target="_blank" href="https://github.com/nwalser/docker-stack">
-					<img src="/logos/github.svg" alt="" class="w-10" />
-				</a>
-			</div>
-			<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white">
-				<div class="bg-[#754E29]">
-					<img
-						src="/side-projects/3a-rechner.svg"
-						alt=""
-						class="aspect-[8/3] object-contain object-center"
-					/>
-				</div>
-				<div class="flex flex-1 flex-col space-y-2 p-4 mb-5">
-					<p class="text-gray-900 text-sm -mb-2">Actively Maintained</p>
-					<h2 class="font-bold text-gray-900 text-2xl">
-						<a href="https://3a-rechner.ch" target="_blank">
-							<span aria-hidden="true" class="absolute inset-0" />
-							3a-rechner.ch
-						</a>
-					</h2>
-					<p class="text-sm text-gray-500">
-						3A-Rechner is a website for comparing different swiss 3a portfolio offers. It forecasts
-						the expected returns and final balance based on your personal situation. It is built
-						with SvelteKit and Tailwind CSS.
-					</p>
-				</div>
-				<a class="z-10 bottom-2 right-2 absolute" target="_blank" href="https://github.com/nwalser/3a-comparator">
-					<img src="/logos/github.svg" alt="" class="w-10" />
-				</a>
-			</div>
-			<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white">
 				<div class="bg-gray-800">
 					<img
 						src="/side-projects/personal-homepage.svg"
@@ -104,6 +53,58 @@
 					<img src="/logos/github.svg" alt="" class="w-10" />
 				</a>
 			</div>
+			<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white">
+				<div class="bg-[#E0E0D1]">
+					<img
+						src="/side-projects/docker-stack.png"
+						alt=""
+						class="aspect-[8/3] object-contain object-center"
+					/>
+				</div>
+				<div class="flex flex-1 flex-col space-y-2 p-4 mb-5">
+					<p class="text-gray-900 text-sm -mb-2">Not Maintained</p>
+					<h2 class="font-bold text-gray-900 text-2xl">
+						<a href="https://docker-stack.com" target="_blank">
+							<span aria-hidden="true" class="absolute inset-0" />
+							docker-stack.com
+						</a>
+					</h2>
+					<p class="text-sm text-gray-500">
+						Docker Stack is a website with prebuilt docker stacks, ready to download and to use in
+						projects. It is built with SvelteKit and FlowbiteUI.
+					</p>
+				</div>
+				<a class="z-10 bottom-2 right-2 absolute" target="_blank" href="https://github.com/nwalser/docker-stack">
+					<img src="/logos/github.svg" alt="" class="w-10" />
+				</a>
+			</div>
+			<div class="group relative flex flex-col overflow-hidden rounded-lg bg-white">
+				<div class="bg-[#754E29]">
+					<img
+						src="/side-projects/3a-rechner.svg"
+						alt=""
+						class="aspect-[8/3] object-contain object-center"
+					/>
+				</div>
+				<div class="flex flex-1 flex-col space-y-2 p-4 mb-5">
+					<p class="text-gray-900 text-sm -mb-2">Not Maintained</p>
+					<h2 class="font-bold text-gray-900 text-2xl">
+						<a href="https://3a-rechner.ch" target="_blank">
+							<span aria-hidden="true" class="absolute inset-0" />
+							3a-rechner.ch
+						</a>
+					</h2>
+					<p class="text-sm text-gray-500">
+						3A-Rechner is a website for comparing different swiss 3a portfolio offers. It forecasts
+						the expected returns and final balance based on your personal situation. It is built
+						with SvelteKit and Tailwind CSS.
+					</p>
+				</div>
+				<a class="z-10 bottom-2 right-2 absolute" target="_blank" href="https://github.com/nwalser/3a-comparator">
+					<img src="/logos/github.svg" alt="" class="w-10" />
+				</a>
+			</div>
+
 		</div></span
 	>
 	<span slot="side">
