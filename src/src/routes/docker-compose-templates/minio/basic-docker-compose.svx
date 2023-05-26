@@ -13,9 +13,6 @@ services:
     ports:
       - 9000:9000
       - 9001:9001
-    deploy:
-      placement:
-        constraints: [node.hostname == srvvisman01]
 
 volumes:
   minio_data:
