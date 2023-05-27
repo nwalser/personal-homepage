@@ -1,6 +1,5 @@
 <script lang="ts">
 	import MenuItem from 'src/components/menu/MenuItem.svelte';
-	import Analytics from 'src/components/Analytics.svelte';
 
 	import 'src/app.css';
 
@@ -13,8 +12,6 @@
 		menuOpen = !menuOpen;
 	}
 </script>
-
-<Analytics />
 
 <svelte:head>
 	<meta name="theme-color" content="#1f2937"/>
