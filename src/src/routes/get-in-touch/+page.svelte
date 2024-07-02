@@ -29,8 +29,8 @@
 				</p>
 				<p>
 					Alternatively I am also reachable via the following e-mail: <a
-						href="mailto:nathaniel.walser@esp-engineering.com"
-						>nathaniel.walser@esp-engineering.com</a
+						href="mailto:personal@nathaniel-walser.com"
+						>personal@nathaniel-walser.com</a
 					>
 				</p>
 			</Prose>
