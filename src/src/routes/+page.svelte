@@ -85,24 +85,13 @@
 				<h1>Hi! I am Nathaniel Walser.</h1>
 				<p>
 					I am a 21 year old <span class="font-bold">fullstack developer</span> based in Saint Gallen,
-					Switzerland. My fascination with technology and robotics has led me to pursue learning programming,
-					and I am always looking for ways to improve my skills and stay up-to-date with the latest technologies.
-					I have worked on a number of projects, including creating software algorithms with neuronal
-					networks for surface inspection and quality assurance.
+					Switzerland. My fascination with technology and robotics has led me to pursue a career in software engineering with a focus on robotics.
 				</p>
 				<p>
-					Currently I am working part time for <span class="font-bold">esp-engineering gmbh</span>,
-					where I am able to extend my knowledge in vision based algorithms, operator interfaces,
-					managing large datasets and many areas more.
+					Currently I am working for myself on my own projects and study part time Systems Engineering at the <span class="font-bold">Zurich University of Applied Science</span>. Currently I am in the fifth semester.
 				</p>
 				<p>
-					In addition to this position at esp-engineering, I am also able to study systems
-					engineering at the <span class="font-bold">Zurich University of Applied Sciences</span> in
-					Winterthur, currently in the second semester.
-				</p>
-				<p>
-					In my free time I fly quadrocopters, learn new technologies and develop plugins for a
-					fully autonomous autopilot.
+					In my free time I fly quadrocopters and different types of airplanes, learn new technologies and do jogging and biking.
 				</p>
 				<p>
 					Feel free to have a look around my personal website and if you want to get in touch feel
@@ -122,8 +111,6 @@
 				</div>
 			</Prose>
 		</Panel>
-
-		<Chat />
 
 		<Panel>
 			<Prose>
@@ -168,18 +155,20 @@
 					<Timeline>
 						<TimelineHeading
 							title="esp-engineering gmbh"
-							subtitle={getMonthYearDifferenceString(new Date('2016-01-01'), new Date())}
+							subtitle={getMonthYearDifferenceString(
+								new Date('2016-01-01'), 
+								new Date('2024-05-01'))}
 							src="/logos/esp-engineering.svg"
 							href="https://www.esp-engineering.com/"
 							newTarget={true}
 						/>
 						<TimelineSubheading
 							title="Junior Fullstack Developer .NET/C#"
-							subtitle="August 2020 - Today (40%)"
+							subtitle="August 2020 - May 2024 (60%)"
 						>
 							<span slot="body">
-								I develop vision based algorithms, machine controlling interfaces and data
-								management platforms that are tailored to customer specifications.
+								I developed vision based algorithms, machine controlling interfaces and data
+								management platforms that were tailored to customer specifications.
 							</span>
 						</TimelineSubheading>
 						<TimelineSubheading
